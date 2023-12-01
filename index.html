@@ -3,31 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Warlords of Draenor Dungeon Warforged Simulator</title>
+	<title>WoD dungeon warforged simulator</title>
 	<link rel="stylesheet" href="style.css" />
 	<script src="https://wow.zamimg.com/js/tooltips.js"></script>
 	<script src="script.js"></script>
 </head>
 <body>
-	<h1>Warlords of Draenor Dungeon Warforged Simulator</h1>
-	Simulating a level 10 Guardian Druid repeating 5 x Bloodmaul Slag Mines followed by 5 x Shadowmoon Burial Grounds.
+	<h1>WoD dungeon warforged simulator</h1>
+	Simulating a Guardian Druid running 5 x Bloodmaul Slag Mines, followed by 5 x Shadowmoon Burial Grounds, until all slots are warforged apart from Trinket 2
 
 	<p>
 		<label for="warforged_chance_percent">Warforged chance:</label>
-		<input type="number" id="warforged_chance_percent" name="warforged_chance_percent" min="0" max="100" value="8" />%
+		<input type="number" id="warforged_chance_percent" name="warforged_chance_percent" min="0" max="100" value="10" />%
 	</p>
 	<p>
 		<button type="button" class="button" onclick="start()">Start</button>
 		<button type="button" class="button" onclick="slower()">Slower</button>
 		<button type="button" class="button" onclick="faster()">Faster</button>
 		<button type="button" class="button" onclick="stop()">Stop</button>
+		<button type="button" class="button" onclick="resume()">Resume</button>
 		<button type="button" class="button" onclick="reset()">Reset</button>
 	</p>
 	<p>
 		<div id="count"></div>
 	</p>
 	<p>
-		<table class="CharacterProfile-itemDetails">
+		<table>
+			<thead>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
 			<tbody id="table_contents">
 			</tbody>
 		</table>

@@ -1,4 +1,8 @@
-var array = [1, 2];
+var array = [
+	{ "name": "Head" },
+	{ "name": "Neck", "ignore": true },
+	{ "name": "Shoulder", "ignore": false }
+];
 
-for(let i=0; i<array.length+2; i++)
-	console.log(array[i]);
+for(let i=0; i<array.length; i++)
+	console.log(array[i].name + ", " + array[i].ignore);

@@ -26,10 +26,10 @@ let slots = [
 	{ "name": "Finger 1" },
 	{ "name": "Finger 2" },
 	{ "name": "Trinket 1" },
-//	{ "name": "Trinket 2" },
+	{ "name": "Trinket 2", "ignore": true },
 	{ "name": "Back" },
-	{ "name": "Main Hand" }
-//	{ "name": "Off Hand" }
+	{ "name": "Main Hand" },
+	{ "name": "Off Hand", "ignore": true }
 ];
 
 const items = [
@@ -585,10 +585,13 @@ function update_slots()
 		for(var i=0; i<slots.length; i++)
 		{
 			var row = tbody.insertRow();
+			
+			// Slot
 			var cell = row.insertCell();
 			cell.textContent = slots[i].name;
 
-			cell = row.insertCell();
+			// Item link
+			row.insertCell();
 		}
 	}
 
@@ -596,11 +599,11 @@ function update_slots()
 	{
 		let slot = slots[i];
 		let row = tbody.rows[i];
-		let cell = row.cells[1];
+		let item_cell = row.cells[1];
 
-		while(cell.hasChildNodes())
+		while(item_cell.hasChildNodes())
 		{
-			cell.removeChild(cell.lastChild);
+			item_cell.removeChild(item_cell.lastChild);
 		}
 
 		if(slot.item_id != 0)
@@ -622,13 +625,8 @@ function update_slots()
 
 			let item = get_item_by_item_id(slot.item_id);
 			anchor.textContent = item.name;
-			//cell = row.insertCell();
 
-			cell.appendChild(anchor);
-			//let text = item.name;
-			//if(slot.warforged)
-			//	text = "*" + text + "*";
-			//cell.textContent = text;
+			item_cell.appendChild(anchor);
 		}
 	}
 }
@@ -664,7 +662,7 @@ function roll_dice(chance_percent) {
 function is_full_warforged()
 {
 	for(i=0; i<slots.length; i++)
-		if(slots[i].warforged == false)
+		if((slots[i].ignore == undefined || slots[i].ignore == false) && slots[i].warforged == false)
 			return false;
 
 	return true;
@@ -747,8 +745,13 @@ function step()
 
 function start()
 {
-	if(timer_id != -1)
-		clearTimeout(timer_id);
+	reset();
+	resume();
+}
+
+function resume()
+{
+	clearTimeout(timer_id);
 
 	run = true;
 	step();
@@ -756,23 +759,27 @@ function start()
 
 function stop()
 {
-	if(timer_id != -1)
-	{
-		clearTimeout(timer_id);
-		timer_id = -1;
-	}
+	clearTimeout(timer_id);
 
 	run = false;
 }
 
 function faster()
 {
+	clearTimeout(timer_id);
 	interval = interval / 2;
+
+	if(run == true)
+		resume();
 }
 
 function slower()
 {
+	clearTimeout(timer_id);
 	interval = interval * 2;
+
+	if(run == true)
+		resume();
 }
 
 function init_counts()
@@ -786,6 +793,8 @@ function init_counts()
 
 function reset()
 {
+	clearTimeout(timer_id);
+
 	init_counts();
 	init_slots();
 	update_slots();
