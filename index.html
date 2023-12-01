@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Warlords of Draenor Dungeon Warforged Simulator</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1>Warlords of Draenor Dungeon Warfored Simulator</h1>
+	Simulation of a level 10 Guardian Druid alternating between Bloodmaul Slag Mines and Shadowmoon Burial Grounds.
+
+	<p>
+		<label for="warforged_chance_percent">Warforged chance:</label>
+		<input type="number" id="warforged_chance_percent" name="warforged_chance_percent" min="0" max="100" value="8" />%
+	</p>
+	<p>
+		<button type="button" onclick="start()">Start</button>
+		<button type="button" onclick="slower()">Slow down</button>
+		<button type="button" onclick="faster()">Speed up</button>
+		<button type="button" onclick="stop()">Stop</button>
+		<button type="button" onclick="reset()">Reset</button>
+	</p>
+	<p>
+		<div id="count"></div>
+	</p>
+	<p>
+		<div id="slots" class="CharacterProfile-itemDetails">
+		</div>
+	</p>
+</body>
+</html>

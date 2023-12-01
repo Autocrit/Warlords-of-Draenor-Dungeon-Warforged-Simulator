@@ -1,0 +1,478 @@
+[
+	{
+		"id": 109898,
+		"name": "Blackwater Wrap",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Chest"
+	},
+	{
+		"id": 109885,
+		"name": "Bloodfeather Chestwrap",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Chest"
+	},
+	{
+		"id": 109884,
+		"name": "Chestguard of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Chest"
+	},
+	{
+		"id": 109886,
+		"name": "Crystalbinder Chestguard",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Chest"
+	},
+	{
+		"id": 109897,
+		"name": "Leafmender Robes",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Chest"
+	},
+	{
+		"id": 109862,
+		"name": "Blackwater Grips",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Gloves"
+	},
+	{
+		"id": 109849,
+		"name": "Bloodfeather Grips",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Gloves"
+	},
+	{
+		"id": 109850,
+		"name": "Crystalbinder Gloves",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Gloves"
+	},
+	{
+		"id": 109848,
+		"name": "Gauntlets of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Gloves"
+	},
+	{
+		"id": 109851,
+		"name": "Leafmender Grips",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Gloves"
+	},
+	{
+		"id": 110040,
+		"name": "Crushto's Neck Separator",
+		"class": "Weapon",
+		"subclass": "Polearms",
+		"slot": "Two-Hand"
+	},
+	{
+		"id": 109882,
+		"name": "Blackwater Wristguards",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist"
+	},
+	{
+		"id": 109869,
+		"name": "Bloodfeather Bracers",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist"
+	},
+	{
+		"id": 109868,
+		"name": "Bracers of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist"
+	},
+	{
+		"id": 109870,
+		"name": "Crystalbinder Wristguards",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist"
+	},
+	{
+		"id": 109871,
+		"name": "Leafmender Wraps",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist"
+	},
+	{
+		"id": 109823,
+		"name": "Blackwater Leggings",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs"
+	},
+	{
+		"id": 109810,
+		"name": "Bloodfeather Leggings",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs"
+	},
+	{
+		"id": 109811,
+		"name": "Crystalbinder Legwraps",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs"
+	},
+	{
+		"id": 109812,
+		"name": "Leafmender Legwraps",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs"
+	},
+	{
+		"id": 109809,
+		"name": "Legguards of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs"
+	},
+	{
+		"id": 109904,
+		"name": "Cloak of Cascading Blades",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back"
+	},
+	{
+		"id": 109929,
+		"name": "Cloak of Steeled Nerves",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back"
+	},
+	{
+		"id": 109906,
+		"name": "Cloak of Violent Harmony",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back"
+	},
+	{
+		"id": 109905,
+		"name": "Deadshot Greatcloak",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back"
+	},
+	{
+		"id": 109916,
+		"name": "Drape of Swirling Deflection",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back"
+	},
+	{
+		"id": 109915,
+		"name": "Rigid Scale Cloak",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back"
+	},
+	{
+		"id": 109918,
+		"name": "Soot-Scarred Longcloak",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back"
+	},
+	{
+		"id": 109917,
+		"name": "Three-Clefthoof Cape",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back"
+	},
+	{
+		"id": 109799,
+		"name": "Blackwater Boots",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet"
+	},
+	{
+		"id": 109788,
+		"name": "Bloodfeather Treads",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet"
+	},
+	{
+		"id": 109787,
+		"name": "Boots of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet"
+	},
+	{
+		"id": 109789,
+		"name": "Crystalbinder Sandals",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet"
+	},
+	{
+		"id": 109798,
+		"name": "Leafmender Sandals",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet"
+	},
+	{
+		"id": 110015,
+		"name": "Toria's Unseeing Eye",
+		"class": "Armor",
+		"subclass": "Trinkets",
+		"slot": "Trinket"
+	},
+	{
+		"id": 109979,
+		"name": "Blackwater Helm",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head"
+	},
+	{
+		"id": 109976,
+		"name": "Bloodfeather Cowl",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head"
+	},
+	{
+		"id": 109977,
+		"name": "Crystalbinder Helm",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head"
+	},
+	{
+		"id": 109975,
+		"name": "Hood of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head"
+	},
+	{
+		"id": 109978,
+		"name": "Leafmender Hood",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head"
+	},
+	{
+		"id": 109938,
+		"name": "Blackwater Spaulders",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder"
+	},
+	{
+		"id": 109935,
+		"name": "Bloodfeather Spaulders",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder"
+	},
+	{
+		"id": 109936,
+		"name": "Crystalbinder Shoulderpads",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder"
+	},
+	{
+		"id": 109937,
+		"name": "Leafmender Mantle",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder"
+	},
+	{
+		"id": 109934,
+		"name": "Spaulders of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder"
+	},
+	{
+		"id": 109779,
+		"name": "Ancient Draenic Loop",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger"
+	},
+	{
+		"id": 109783,
+		"name": "Band of the Stalwart Stanchion",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger"
+	},
+	{
+		"id": 109775,
+		"name": "Bladebinder Ring",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger"
+	},
+	{
+		"id": 109761,
+		"name": "Bloodthorn Band",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger"
+	},
+	{
+		"id": 109760,
+		"name": "Ced's Chiming Circle",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger"
+	},
+	{
+		"id": 109759,
+		"name": "Ro-Ger's Brown Diamond Seal",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger"
+	},
+	{
+		"id": 109776,
+		"name": "Seal of Resilient Fortitude",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger"
+	},
+	{
+		"id": 109762,
+		"name": "Signet of Radiant Leaves",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger"
+	},
+	{
+		"id": 109778,
+		"name": "Signet of the Glorious Protector ",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger"
+	},
+	{
+		"id": 109777,
+		"name": "Unsullied Signet",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger"
+	},
+	{
+		"id": 109969,
+		"name": "Choker of Weeping Viscera",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck"
+	},
+	{
+		"id": 109951,
+		"name": "Fireblade Collar",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck"
+	},
+	{
+		"id": 109965,
+		"name": "Fistbreak Choker",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck"
+	},
+	{
+		"id": 109967,
+		"name": "Necklace of Holy Deflection",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck"
+	},
+	{
+		"id": 109966,
+		"name": "Reinforced Bloodsteel Gorget",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck"
+	},
+	{
+		"id": 109952,
+		"name": "Skulltooth Chain",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck"
+	},
+	{
+		"id": 109950,
+		"name": "Stormshot Choker",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck"
+	},
+	{
+		"id": 109953,
+		"name": "Windseal Necklace",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck"
+	},
+	{
+		"id": 109829,
+		"name": "Belt of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist"
+	},
+	{
+		"id": 109842,
+		"name": "Blackwater Belt",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist"
+	},
+	{
+		"id": 109830,
+		"name": "Bloodfeather Girdle",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist"
+	},
+	{
+		"id": 109831,
+		"name": "Crystalbinder Belt",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist"
+	},
+	{
+		"id": 109832,
+		"name": "Leafmender Girdle",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist"
+	}
+]

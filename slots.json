@@ -1,0 +1,50 @@
+{
+	"Head": {
+		"id": 1
+	},
+	"Neck": {
+		"id": 2
+	},
+	"Shoulder": {
+		"id": 3
+	},
+	"Chest": {
+		"id": 5
+	},
+	"Waist": {
+		"id": 6
+	},
+	"Legs": {
+		"id": 7
+	},
+	"Feet": {
+		"id": 8
+	},
+	"Wrist": {
+		"id": 9
+	},
+	"Gloves": {
+		"id": 10
+	},
+	"Finger 1": {
+		"id": 11
+	},
+	"Finger 2": {
+		"id": 12
+	},
+	"Trinket 1": {
+		"id": 13
+	},
+	"Trinket 2": {
+		"id": 14
+	},
+	"Back": {
+		"id": 15
+	},
+	"Main Hand": {
+		"id": 16
+	},
+	"Off Hand": {
+		"id": 17
+	}
+}

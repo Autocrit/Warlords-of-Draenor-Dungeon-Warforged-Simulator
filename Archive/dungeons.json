@@ -1,0 +1,247 @@
+[
+	{
+		"Bloodmaul Slag Mines": {
+			"bosses": [
+				{
+					"Magmolatus": {
+						"loot": [
+							{
+								"id": 109898,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109885,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109884,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109886,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109897,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109862,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109849,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109850,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109848,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109851,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"Slave Watcher Crushto": {
+						"loot": [
+							{
+								"id": 110040,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109882,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109869,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109868,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109870,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109871,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109823,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109810,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": ,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109811,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109812,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							},
+							{
+								"id": 109809,
+								"classes": [
+									{
+										"druid": {
+											"specs": [ "guardian" ]
+										}
+									}
+								]
+							}
+						]
+					}
+					
+				},
+				{
+					"Roltall": {}
+				},
+				{
+					"Gug'rokk": {}
+				}
+			]
+		}
+	}
+]
