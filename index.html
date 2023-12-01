@@ -9,26 +9,28 @@
 	<script src="script.js"></script>
 </head>
 <body>
-	<h1>Warlords of Draenor Dungeon Warfored Simulator</h1>
-	Simulation of a level 10 Guardian Druid alternating between Bloodmaul Slag Mines and Shadowmoon Burial Grounds.
+	<h1>Warlords of Draenor Dungeon Warforged Simulator</h1>
+	Simulating a level 10 Guardian Druid repeating 5 x Bloodmaul Slag Mines followed by 5 x Shadowmoon Burial Grounds.
 
 	<p>
 		<label for="warforged_chance_percent">Warforged chance:</label>
 		<input type="number" id="warforged_chance_percent" name="warforged_chance_percent" min="0" max="100" value="8" />%
 	</p>
 	<p>
-		<button type="button" onclick="start()">Start</button>
-		<button type="button" onclick="slower()">Slow down</button>
-		<button type="button" onclick="faster()">Speed up</button>
-		<button type="button" onclick="stop()">Stop</button>
-		<button type="button" onclick="reset()">Reset</button>
+		<button type="button" class="button" onclick="start()">Start</button>
+		<button type="button" class="button" onclick="slower()">Slower</button>
+		<button type="button" class="button" onclick="faster()">Faster</button>
+		<button type="button" class="button" onclick="stop()">Stop</button>
+		<button type="button" class="button" onclick="reset()">Reset</button>
 	</p>
 	<p>
 		<div id="count"></div>
 	</p>
 	<p>
-		<div id="slots" class="CharacterProfile-itemDetails">
-		</div>
+		<table class="CharacterProfile-itemDetails">
+			<tbody id="table_contents">
+			</tbody>
+		</table>
 	</p>
 </body>
 </html>

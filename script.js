@@ -572,45 +572,65 @@ function get_item_by_item_id(id)
 
 function update_slots()
 {
-	let slots_element = document.getElementById("slots");
+	let tbody = document.getElementById("table_contents");
 
 	// Clear table
-	while(slots_element.hasChildNodes()) {
-		slots_element.removeChild(slots_element.lastChild);
+//	while(slots_element.hasChildNodes()) {
+//		slots_element.removeChild(slots_element.lastChild);
+//	}
+
+	// Init table
+	if(tbody.rows.length == 0)
+	{
+		for(var i=0; i<slots.length; i++)
+		{
+			var row = tbody.insertRow();
+			var cell = row.insertCell();
+			cell.textContent = slots[i].name;
+
+			cell = row.insertCell();
+		}
 	}
 
-	slots.forEach(slot => {
-		if(slot.item_id != 0) {
+	for(var i=0; i<slots.length; i++)
+	{
+		let slot = slots[i];
+		let row = tbody.rows[i];
+		let cell = row.cells[1];
+
+		while(cell.hasChildNodes())
+		{
+			cell.removeChild(cell.lastChild);
+		}
+
+		if(slot.item_id != 0)
+		{
+
 			let anchor = document.createElement("a");
 			let url = "https://www.wowhead.com/item=" + slot.item_id;
-			let ilvl = 33;
+			let ilvl = 33, colour = "color-rare";
 			if(slot.warforged)
 			{
 				url = url + "?bonus=4746";
-				anchor.setAttribute("class", "color-epic");
+				colour = "color-epic";
 				ilvl = 59
 			}
-			else
-				anchor.setAttribute("class", "color-rare");
 
 			url += "&ilvl=" + ilvl;
-
 			anchor.setAttribute("href", url);
+			anchor.setAttribute("class", colour);
+
 			let item = get_item_by_item_id(slot.item_id);
 			anchor.textContent = item.name;
 			//cell = row.insertCell();
 
-			slots_element.appendChild(anchor);
+			cell.appendChild(anchor);
 			//let text = item.name;
 			//if(slot.warforged)
 			//	text = "*" + text + "*";
 			//cell.textContent = text;
 		}
-
-		let linebreak = document.createElement("br");
-		slots_element.appendChild(linebreak);
-
-	});
+	}
 }
 
 function update_count()
