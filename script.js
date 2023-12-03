@@ -667,21 +667,30 @@ function update_slots()
 	// Init table
 	if(tbody.rows.length == 0)
 	{
-		for(var i=0; i<slots.length; i++)
+		for(let i=0; i<slots.length; i++)
 		{
-			var row = tbody.insertRow();
+			let row = tbody.insertRow();
 			
 			// Slot
-			var cell = row.insertCell();
+			let cell = row.insertCell();
 			cell.textContent = slots[i].name;
 
 			// Item link
 			row.insertCell();
 
-			// wf, socket, tertiary
-			row.insertCell();
-			row.insertCell();
-			row.insertCell();
+			// wf, socket, speed, leech
+			for(let j=0; j<4; j++)
+			{
+				let checkbox = document.createElement("input");
+				checkbox.setAttribute("type", "checkbox");
+				checkbox.setAttribute("checked", "checked");
+				checkbox.setAttribute("disabled", "disabled");
+				checkbox.setAttribute("hidden", "hidden");
+
+				cell = row.insertCell();
+				cell.setAttribute("style", "text-align: center");
+				cell.appendChild(checkbox);
+			}
 		}
 	}
 
@@ -692,24 +701,49 @@ function update_slots()
 		let item_cell = row.cells[1];
 		let warforged_cell = row.cells[2];
 		let socket_cell = row.cells[3];
-		let tertiary_cell = row.cells[4];
+		let speed_cell = row.cells[4];
+		let leech_cell = row.cells[5];
 
 		while(item_cell.hasChildNodes())
-		{
 			item_cell.removeChild(item_cell.lastChild);
-		}
 
 		if(slot.warforged)
-			warforged_cell.textContent = "warforged";
+		{
+			warforged_cell.firstChild.removeAttribute("hidden");
+		}
 		else
-			warforged_cell.textContent = "";
+		{
+			warforged_cell.firstChild.setAttribute("hidden", "hidden");
+		}
 
 		if(slot.socket)
-			socket_cell.textContent = "socket";
+		{
+			socket_cell.firstChild.removeAttribute("hidden");
+		}
 		else
-			socket_cell.textContent = "";
+		{
+			socket_cell.firstChild.setAttribute("hidden", "hidden");
+		}
 
-		tertiary_cell.textContent = slot.tertiary;
+		if(slot.tertiary == "speed")
+		{
+			speed_cell.firstChild.removeAttribute("hidden");
+		}
+		else
+		{
+			speed_cell.firstChild.setAttribute("hidden", "hidden");
+		}
+
+		if(slot.tertiary == "leech")
+		{
+			leech_cell.firstChild.removeAttribute("hidden");
+		}
+		else
+		{
+			leech_cell.firstChild.setAttribute("hidden", "hidden");
+		}
+
+		//tertiary_cell.textContent = slot.tertiary;
 
 		if(slot.item_id != 0)
 		{
