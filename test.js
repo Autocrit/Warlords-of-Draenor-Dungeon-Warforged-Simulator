@@ -1,8 +1,19 @@
-var array = [
-	{ "name": "Head" },
-	{ "name": "Neck", "ignore": true },
-	{ "name": "Shoulder", "ignore": false }
-];
+function myfunction(item)
+{
+	item.warforged = true;
+}
 
-for(let i=0; i<array.length; i++)
-	console.log(array[i].name + ", " + array[i].ignore);
+let item1 = {
+	"id": 109898,
+	"name": "Blackwater Wrap",
+	"class": "Armor",
+	"subclass": "Leather Armor",
+	"slot": "Chest"
+};
+
+
+console.log(JSON.stringify(item1));
+
+myfunction(item1);
+
+console.log(JSON.stringify(item1));

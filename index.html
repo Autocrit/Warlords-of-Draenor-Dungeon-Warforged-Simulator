@@ -4,22 +4,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>WoD dungeon warforged simulator</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" />
 	<script src="https://wow.zamimg.com/js/tooltips.js"></script>
 	<script src="script.js"></script>
 </head>
 <body>
 	<h1>WoD dungeon warforged simulator</h1>
-	Simulating a Guardian Druid running 5 x Bloodmaul Slag Mines, followed by 5 x Shadowmoon Burial Grounds, until all slots are warforged apart from Trinket 2
-
 	<p>
-		<label for="warforged_chance_percent">Warforged chance:</label>
-		<input type="number" id="warforged_chance_percent" name="warforged_chance_percent" min="0" max="100" value="10" />%
+		Simulating a Guardian Druid running 5 x Bloodmaul Slag Mines, followed by 5 x Shadowmoon Burial Grounds.<br />
+		Stopping when all slots are warforged, have a socket where possible and have leech or speed tertirary.
+		<P>warforged > socket > tertiary</P>
+	</p>
+	<p>
+		<label for="upgrade_chance_percent">Upgrade chance:</label>
+		<input type="number" id="upgrade_chance_percent" name="upgrade_chance_percent" min="0" max="100" value="10" readonly />%
 	</p>
 	<p>
 		<button type="button" class="button" onclick="start()">Start</button>
 		<button type="button" class="button" onclick="slower()">Slower</button>
 		<button type="button" class="button" onclick="faster()">Faster</button>
+		<button type="button" class="button" onclick="fastest()">Fastest</button>
 		<button type="button" class="button" onclick="stop()">Stop</button>
 		<button type="button" class="button" onclick="resume()">Resume</button>
 		<button type="button" class="button" onclick="reset()">Reset</button>
@@ -32,7 +39,10 @@
 			<thead>
 				<tr>
 					<th></th>
-					<th></th>
+					<th width="250px"></th>
+					<th width="50px" style="text-align: center"></th>
+					<th width="50px" style="text-align: center"></th>
+					<th width="50px" style="text-align: center"></th>
 				</tr>
 			</thead>
 			<tbody id="table_contents">

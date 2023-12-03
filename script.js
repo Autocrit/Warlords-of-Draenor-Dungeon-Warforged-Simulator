@@ -2,9 +2,12 @@ let dungeon_run_pattern_index = 0
 let boss_index = 0;
 let dungeon_count = 0;
 let boss_count = 0;
-let warforged_count = 0;
+let wf_count = 0;
+let wf_socket_count = 0;
+let wf_tert_count = 0;
+let wf_socket_tert_count = 0;
 
-let interval = 2000;
+let interval = 1000;
 
 let run = false;
 
@@ -13,18 +16,22 @@ let timer_id = 0;
 // Do 5 x Bloodmaul Slag Mines followed by 5 x Shadowmoon Burial Grounds
 let dungeon_run_pattern =  [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ];
 
+let can_socket = [ "Head", "Neck", "Wrist", "Finger" ];
+
+let tertiaries = [ "speed", "leech", "avoidance", "indestructible" ];
+
 let slots = [
-	{ "name": "Head" },
-	{ "name": "Neck" },
+	{ "name": "Head", "can_socket": true },
+	{ "name": "Neck", "can_socket": true },
 	{ "name": "Shoulder" },
 	{ "name": "Chest" },
 	{ "name": "Waist" },
 	{ "name": "Legs" },
 	{ "name": "Feet" },
-	{ "name": "Wrist" },
+	{ "name": "Wrist", "can_socket": true },
 	{ "name": "Gloves" },
-	{ "name": "Finger 1" },
-	{ "name": "Finger 2" },
+	{ "name": "Finger 1", "can_socket": true },
+	{ "name": "Finger 2", "can_socket": true },
 	{ "name": "Trinket 1" },
 	{ "name": "Trinket 2", "ignore": true },
 	{ "name": "Back" },
@@ -558,16 +565,94 @@ const dungeons = [
 
 function init_slots()
 {
-	slots.forEach(slot => {
+	for(var i=0; i<slots.length; i++)
+	{
+		let slot = slots[i];
+
 		slot.item_id = 0;
+		slot.item_level = 0;
+		slot.item_score = 0;
 		slot.warforged = false;
-	});
+		slot.socket = false;
+		slot.tertiary = "";
+
+		if(slot.can_socket == undefined || slot.can_socket == false)
+			slot.can_socket = false;
+
+		if(slot.ignore == undefined || slot.ignore == false)
+			slot.ignore = false;
+	}
 }
 
 function get_item_by_item_id(id)
 {
 	// Get items from JSON file
 	return items.find(item => item.id == id);
+}
+
+function get_item_score(item)
+{
+	// warforged > socket > tertiary
+	let item_score = 0;
+	if(item.item_id != 0)
+		item_score = 1;
+
+	if(item.tertiary == "avoidance" || item.tertiary == "indestructible")
+	{
+		//item_score += 1;
+	}
+
+	else if(item.tertiary == "speed" || item.tertiary == "leech")
+	{
+		item_score += 2;
+	}
+
+	if(item.socket)
+	{
+		item_score += 10;
+	}
+
+	if(item.warforged)
+	{
+		item_score += 100;
+	}
+
+	return item_score;
+}
+
+function upgrade_slot(item, slot1, slot2/*optional*/)
+{
+	let item_score = get_item_score(item);
+	let slot = slot1;
+
+	let upgrade_score = item_score - slot1.item_score;
+
+	if(slot2 != undefined)
+	{
+		let upgrade_score_2 = item_score - slot2.item_score;
+
+		// Check if already equipped and whether to upgrade slot 1 or 2
+		if((item.item_id == slot2.item_id) || (upgrade_score_2 > upgrade_score))
+		{
+			upgrade_score = upgrade_score_2;
+			slot = slot2;
+		}
+	}
+
+	if(upgrade_score > 0)
+	{
+		slot.item_id = item.id;
+		slot.item_level = item.item_level;
+		slot.item_score = item_score;
+		slot.warforged = item.warforged;
+		slot.tertiary = item.tertiary;
+		if(slot.can_socket)
+			slot.socket = item.socket;
+
+		return true;
+	}
+	else
+		return false;
 }
 
 function update_slots()
@@ -592,6 +677,11 @@ function update_slots()
 
 			// Item link
 			row.insertCell();
+
+			// wf, socket, tertiary
+			row.insertCell();
+			row.insertCell();
+			row.insertCell();
 		}
 	}
 
@@ -600,15 +690,29 @@ function update_slots()
 		let slot = slots[i];
 		let row = tbody.rows[i];
 		let item_cell = row.cells[1];
+		let warforged_cell = row.cells[2];
+		let socket_cell = row.cells[3];
+		let tertiary_cell = row.cells[4];
 
 		while(item_cell.hasChildNodes())
 		{
 			item_cell.removeChild(item_cell.lastChild);
 		}
 
+		if(slot.warforged)
+			warforged_cell.textContent = "warforged";
+		else
+			warforged_cell.textContent = "";
+
+		if(slot.socket)
+			socket_cell.textContent = "socket";
+		else
+			socket_cell.textContent = "";
+
+		tertiary_cell.textContent = slot.tertiary;
+
 		if(slot.item_id != 0)
 		{
-
 			let anchor = document.createElement("a");
 			let url = "https://www.wowhead.com/item=" + slot.item_id;
 			let ilvl = 33, colour = "color-rare";
@@ -616,7 +720,7 @@ function update_slots()
 			{
 				url = url + "?bonus=4746";
 				colour = "color-epic";
-				ilvl = 59
+				ilvl = 59;
 			}
 
 			url += "&ilvl=" + ilvl;
@@ -631,17 +735,23 @@ function update_slots()
 	}
 }
 
-function update_count()
+function update_stats()
 {
-	let warforged_percent = 0;
+	let wf_percent = 0, wf_socket_percent = 0, wf_tert_percent = 0, wf_socket_tert_percent = 0;
 	if(boss_count > 0)
-		warforged_percent = 100 * warforged_count / boss_count;
-	
-	let text = "";
-	text += dungeon_count + " dungeon(s), "
-	text += boss_count + " boss(es), "
-	text += warforged_count + " warforged items (";
-	text += warforged_percent.toFixed(1) + "%)"
+	{
+		wf_percent = 100 * wf_count / boss_count;
+		wf_socket_percent = 100 * wf_socket_count / boss_count;
+		wf_tert_percent = 100 * wf_tert_count / boss_count;
+		wf_socket_tert_percent = 100 * wf_socket_tert_count / boss_count;
+	}
+
+	let text = dungeon_count + " dungeon(s)\n";
+	text += boss_count + " boss(es)\n";
+	text += "Warforged: " + wf_percent.toFixed(2) + "%\n";
+	text += "Warforged + socket: " + wf_socket_percent.toFixed(2) + "%\n";
+	text += "Warforged + tertiary: " + wf_tert_percent.toFixed(2) + "%\n";
+	text += "Warforged + socket + tertiary: " + wf_socket_tert_percent.toFixed(2) + "%";
 
 	document.getElementById("count").innerText = text;
 }
@@ -655,15 +765,29 @@ function rand_int(min, max)
 	return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function roll_dice(chance_percent) {
+function roll_dice(chance_percent)
+{
 	return Math.random() * 100 <= chance_percent;
 }
 
-function is_full_warforged()
+function is_fully_warforged()
 {
 	for(i=0; i<slots.length; i++)
 		if((slots[i].ignore == undefined || slots[i].ignore == false) && slots[i].warforged == false)
 			return false;
+
+	return true;
+}
+
+function is_fully_upgraded()
+{
+	for(i=0; i<slots.length; i++)
+	{
+		if(slots[i].ignore == false && (slots[i].warforged == false ||
+			(slots[i].can_socket == true && slots[i].socket == false) ||
+			slots[i].tertiary == "" || slots[i].tertiary == "avoidance" || slots[i].tertiary == "indestructible"))
+			return false;
+	}
 
 	return true;
 }
@@ -674,50 +798,71 @@ function step()
 	let dungeon = dungeons[dungeon_index];
 	let boss = dungeon.bosses[boss_index];
 
-	let warforged_chance_percent = document.getElementById("warforged_chance_percent").value;
+	let upgrade_chance_percent = document.getElementById("upgrade_chance_percent").value;
 
 	// Get a random piece = of loot
 	let rand_loot_index = rand_int(0, boss.loot.length-1);
 	let item_id = boss.loot[rand_loot_index];
 
-	let item = get_item_by_item_id(item_id);
+	let item = Object.assign({}, get_item_by_item_id(item_id));
 
-	let warforged = roll_dice(warforged_chance_percent);
-	if(warforged)
-		warforged_count++;
-
-	//console.log("Loot: " + item_id + ", " + item.name + ", " + warforged)
-
-	let slot_name = item.slot;
-	if(slot_name == "Trinket")
-		slot_name = "Trinket 1";
-	else if(slot_name == "Two-Hand")
-		slot_name = "Main Hand"
-	else if(slot_name == "Finger")
+	item.warforged = roll_dice(upgrade_chance_percent);
+	if(can_socket.includes(item.slot))
 	{
-		// Rings are unique-equipped
+		item.socket = roll_dice(upgrade_chance_percent);
+	}
+
+	let tertiary = roll_dice(upgrade_chance_percent);
 	
-		// Default to Finger 1
-		slot_name = "Finger 1";
+	if(tertiary)
+	{
+		item.tertiary = tertiaries[rand_int(0, tertiaries.length-1)];
+	}
+	else
+		item.tertiary = "";
 
-		let finger1 = slots.find(slot => slot.name == "Finger 1");
+	if(item.warforged)
+	{
+		item.item_level = 59;
+		wf_count++;
 
-		if((finger1.item_id != 0 && finger1.item_id != item_id) ||
-			finger1.warforged == true)
+		if(tertiary)
 		{
-			// If Finger 1 is not empty and the item isn't already equipped in Finger 1
-			// or Finger 1 is warforged
-			slot_name = "Finger 2";
+			wf_tert_count++;
+		}
+
+		if(item.socket)
+		{
+			wf_socket_count++;
+			if(tertiary)
+				wf_socket_tert_count++;
 		}
 	}
+	else
+		item.item_level = 33;
 
-	// Check if its an upgrade
-	let slot = slots.find(slot => slot.name == slot_name);
-	if(slot.item_id == 0 || (slot.warforged == false && warforged == true))
+	let slot_name = item.slot;
+	let slot1 = undefined, slot2 = undefined;
+	if((slot_name == "Finger"))
 	{
-		slot.item_id = item_id;
-		slot.warforged = warforged;
+		slot1 = slots.find(slot => slot.name == "Finger 1");
+		slot2 = slots.find(slot => slot.name == "Finger 2");
 	}
+	else
+	{
+		if(slot_name == "Trinket")
+		{
+			slot_name = "Trinket 1";
+		}
+		else if(slot_name == "Two-Hand")
+		{
+			slot_name = "Main Hand"
+		}
+
+		slot1 = slots.find(slot => slot.name == slot_name);
+	}
+
+	let upgraded = upgrade_slot(item, slot1, slot2);
 
 	boss_index++;
 	boss_count++;
@@ -733,11 +878,15 @@ function step()
 			dungeon_run_pattern_index = 0;
 	}
 
-	update_slots();
-	update_count();
+	update_stats();
 
-	if(is_full_warforged())
-		run = false;
+	if(upgraded)
+	{
+		update_slots();
+
+		if(is_fully_upgraded())
+			run = false;
+	}
 
 	if(run)
 		timer_id = setTimeout(step, interval);
@@ -773,6 +922,15 @@ function faster()
 		resume();
 }
 
+function fastest()
+{
+	clearTimeout(timer_id);
+	interval = 0;
+
+	if(run == true)
+		resume();
+}
+
 function slower()
 {
 	clearTimeout(timer_id);
@@ -788,7 +946,9 @@ function init_counts()
 	boss_index = 0;
 	dungeon_count = 0;
 	boss_count = 0;
-	warforged_count = 0;
+	wf_count = 0;
+	wf_tert_count = 0;
+	wf_socket_tert_count = 0;
 }
 
 function reset()
@@ -798,7 +958,7 @@ function reset()
 	init_counts();
 	init_slots();
 	update_slots();
-	update_count();
+	update_stats();
 }
 
 window.onload = function onLoad()

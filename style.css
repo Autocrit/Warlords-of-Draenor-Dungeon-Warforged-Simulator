@@ -1,5 +1,8 @@
 body, html {
+	background-color: #202124;
 	font-family: Open Sans,Arial,Helvetica,sans-serif;
+	color: #ffffff;
+	font-weight: 300;
 }
 
 .color-rare {
@@ -12,4 +15,10 @@ body, html {
 
 .button {
 	font-size: 18px;
+}
+
+th, td
+{
+	padding-left: 4px;
+	padding-right: 4px;
 }
