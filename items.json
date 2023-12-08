@@ -1,410 +1,749 @@
-{
-	"109759": {
-		"name": "Ro-Ger's Brown Diamond Seal",
+[
+	{
+		"id": 122248,
+		"name": "Stained Shadowcraft Cap",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head",
+		"quality": "Heirloom",
+		"wowhead_link": "https://www.wowhead.com/item=122248/stained-shadowcraft-cap"
+	},
+	{
+		"id": 122667,
+		"name": "Eternal Emberfury Talisman",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck",
+		"quality": "Heirloom",
+		"wowhead_link": "https://www.wowhead.com/item=122667/eternal-emberfury-talisman"
+	},
+	{
+		"id": 122358,
+		"name": "Stained Shadowcraft Spaulders",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder",
+		"quality": "Heirloom",
+		"wowhead_link": "https://www.wowhead.com/item=122358/stained-shadowcraft-spaulders"
+	},
+	{
+		"id": 160984,
+		"name": "Sauroscale Cloak of Adaptation",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=160984/sauroscale-cloak-of-adaptation"
+	},
+	{
+		"id": 122383,
+		"name": "Stained Shadowcraft Tunic",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Chest",
+		"quality": "Heirloom",
+		"wowhead_link": "https://www.wowhead.com/item=122383/stained-shadowcraft-tunic"
+	},
+	{
+		"id": 154478,
+		"name": "Ranja-Hide Bracers",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=154478/ranja-hide-bracers"
+	},
+	{
+		"id": 160460,
+		"name": "Thick Sauroskin Gloves",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Hands",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=160460/thick-sauroskin-gloves"
+	},
+	{
+		"id": 154474,
+		"name": "Sythian Swiftbelt",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=154474/sythian-swiftbelt"
+	},
+	{
+		"id": 160461,
+		"name": "Thick Sauroskin Pants",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=160461/thick-sauroskin-pants"
+	},
+	{
+		"id": 161091,
+		"name": "Swift-Talon Striders",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=161091/swift-talon-striders"
+	},
+	{
+		"id": 155381,
+		"name": "Cutwater-Captain's Sapphire Ring",
 		"class": "Armor",
 		"subclass": "Rings",
-		"slot": "Finger"
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=155381/cutwater-captains-sapphire-ring"
 	},
-	"109760": {
-		"name": "Ced's Chiming Circle",
+	{
+		"id": 161446,
+		"name": "Blistering Seawater Seal",
 		"class": "Armor",
 		"subclass": "Rings",
-		"slot": "Finger"
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=161446/blistering-seawater-seal"
 	},
-	"109761": {
-		"name": "Bloodthorn Band",
+	{
+		"id": 158556,
+		"name": "Siren's Tongue",
 		"class": "Armor",
-		"subclass": "Rings",
-		"slot": "Finger"
+		"subclass": "Trinkets",
+		"slot": "Trinket",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=158556/sirens-tongue"
 	},
-	"109762": {
-		"name": "Signet of Radiant Leaves",
+	{
+		"id": 178769,
+		"name": "Infinitely Divisible Ooze",
 		"class": "Armor",
-		"subclass": "Rings",
-		"slot": "Finger"
+		"subclass": "Trinkets",
+		"slot": "Trinket",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=178769/infinitely-divisible-ooze"
 	},
-	"109775": {
-		"name": "Bladebinder Ring",
-		"class": "Armor",
-		"subclass": "Rings",
-		"slot": "Finger"
+	{
+		"id": 140773,
+		"name": "Eagletalon Spear",
+		"class": "Weapon",
+		"subclass": "Polearms",
+		"slot": "Two-Hand",
+		"quality": "Heirloom",
+		"wowhead_link": "https://www.wowhead.com/item=140773/eagletalon-spear"
 	},
-	"109776": {
-		"name": "Seal of Resilient Fortitude",
-		"class": "Armor",
-		"subclass": "Rings",
-		"slot": "Finger"
-	},
-	"109777": {
-		"name": "Unsullied Signet",
-		"class": "Armor",
-		"subclass": "Rings",
-		"slot": "Finger"
-	},
-	"109778": {
-		"name": "Signet of the Glorious Protector ",
-		"class": "Armor",
-		"subclass": "Rings",
-		"slot": "Finger"
-	},
-	"109779": {
-		"name": "Ancient Draenic Loop",
-		"class": "Armor",
-		"subclass": "Rings",
-		"slot": "Finger"
-	},
-	"109783": {
-		"name": "Band of the Stalwart Stanchion",
-		"class": "Armor",
-		"subclass": "Rings",
-		"slot": "Finger"
-	},
-	"109787": {
-		"name": "Boots of Burning Focus",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Feet"
-	},
-	"109788": {
-		"name": "Bloodfeather Treads",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Feet"
-	},
-	"109789": {
-		"name": "Crystalbinder Sandals",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Feet"
-	},
-	"109798": {
-		"name": "Leafmender Sandals",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Feet"
-	},
-	"109799": {
-		"name": "Blackwater Boots",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Feet"
-	},
-	"109809": {
-		"name": "Legguards of Burning Focus",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Legs"
-	},
-	"109810": {
-		"name": "Bloodfeather Leggings",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Legs"
-	},
-	"109811": {
-		"name": "Crystalbinder Legwraps",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Legs"
-	},
-	"109812": {
-		"name": "Leafmender Legwraps",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Legs"
-	},
-	"109823": {
-		"name": "Blackwater Leggings",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Legs"
-	},
-	"109829": {
-		"name": "Belt of Burning Focus",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Waist"
-	},
-	"109830": {
-		"name": "Bloodfeather Girdle",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Waist"
-	},
-	"109831": {
-		"name": "Crystalbinder Belt",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Waist"
-	},
-	"109832": {
-		"name": "Leafmender Girdle",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Waist"
-	},
-	"109842": {
-		"name": "Blackwater Belt",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Waist"
-	},
-	"109848": {
-		"name": "Gauntlets of Burning Focus",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Gloves"
-	},
-	"109849": {
-		"name": "Bloodfeather Grips",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Gloves"
-	},
-	"109850": {
-		"name": "Crystalbinder Gloves",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Gloves"
-	},
-	"109851": {
-		"name": "Leafmender Grips",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Gloves"
-	},
-	"109862": {
-		"name": "Blackwater Grips",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Gloves"
-	},
-	"109868": {
-		"name": "Bracers of Burning Focus",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Wrist"
-	},
-	"109869": {
-		"name": "Bloodfeather Bracers",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Wrist"
-	},
-	"109870": {
-		"name": "Crystalbinder Wristguards",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Wrist"
-	},
-	"109871": {
-		"name": "Leafmender Wraps",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Wrist"
-	},
-	"109882": {
-		"name": "Blackwater Wristguards",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Wrist"
-	},
-	"109884": {
-		"name": "Chestguard of Burning Focus",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Chest"
-	},
-	"109885": {
-		"name": "Bloodfeather Chestwrap",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Chest"
-	},
-	"109886": {
-		"name": "Crystalbinder Chestguard",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Chest"
-	},
-	"109897": {
-		"name": "Leafmender Robes",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Chest"
-	},
-	"109898": {
+	{
+		"id": 109898,
 		"name": "Blackwater Wrap",
 		"class": "Armor",
 		"subclass": "Leather Armor",
-		"slot": "Chest"
+		"slot": "Chest",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109898/blackwater-wrap"
 	},
-	"109904": {
-		"name": "Cloak of Cascading Blades",
-		"class": "Armor",
-		"subclass": "Cloak",
-		"slot": "Back"
-	},
-	"109905": {
-		"name": "Deadshot Greatcloak",
-		"class": "Armor",
-		"subclass": "Cloak",
-		"slot": "Back"
-	},
-	"109906": {
-		"name": "Cloak of Violent Harmony",
-		"class": "Armor",
-		"subclass": "Cloak",
-		"slot": "Back"
-	},
-	"109915": {
-		"name": "Rigid Scale Cloak",
-		"class": "Armor",
-		"subclass": "Cloak",
-		"slot": "Back"
-	},
-	"109916": {
-		"name": "Drape of Swirling Deflection",
-		"class": "Armor",
-		"subclass": "Cloak",
-		"slot": "Back"
-	},
-	"109917": {
-		"name": "Three-Clefthoof Cape",
-		"class": "Armor",
-		"subclass": "Cloak",
-		"slot": "Back"
-	},
-	"109918": {
-		"name": "Soot-Scarred Longcloak",
-		"class": "Armor",
-		"subclass": "Cloak",
-		"slot": "Back"
-	},
-	"109929": {
-		"name": "Cloak of Steeled Nerves",
-		"class": "Armor",
-		"subclass": "Cloak",
-		"slot": "Back"
-	},
-	"109934": {
-		"name": "Spaulders of Burning Focus",
+	{
+		"id": 109885,
+		"name": "Bloodfeather Chestwrap",
 		"class": "Armor",
 		"subclass": "Leather Armor",
-		"slot": "Shoulder"
+		"slot": "Chest",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109885/bloodfeather-chestwrap"
 	},
-	"109935": {
-		"name": "Bloodfeather Spaulders",
+	{
+		"id": 109884,
+		"name": "Chestguard of Burning Focus",
 		"class": "Armor",
 		"subclass": "Leather Armor",
-		"slot": "Shoulder"
+		"slot": "Chest",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109884/chestguard-of-burning-focus"
 	},
-	"109936": {
-		"name": "Crystalbinder Shoulderpads",
+	{
+		"id": 109886,
+		"name": "Crystalbinder Chestguard",
 		"class": "Armor",
 		"subclass": "Leather Armor",
-		"slot": "Shoulder"
+		"slot": "Chest",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109886/crystalbinder-chestguard"
 	},
-	"109937": {
-		"name": "Leafmender Mantle",
+	{
+		"id": 109897,
+		"name": "Leafmender Robes",
 		"class": "Armor",
 		"subclass": "Leather Armor",
-		"slot": "Shoulder"
+		"slot": "Chest",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109897/leafmender-robes"
 	},
-	"109938": {
-		"name": "Blackwater Spaulders",
+	{
+		"id": 109862,
+		"name": "Blackwater Grips",
 		"class": "Armor",
 		"subclass": "Leather Armor",
-		"slot": "Shoulder"
+		"slot": "Gloves",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109862/blackwater-grips"
 	},
-	"109950": {
-		"name": "Stormshot Choker",
-		"class": "Armor",
-		"subclass": "Amulets",
-		"slot": "Neck"
-	},
-	"109951": {
-		"name": "Fireblade Collar",
-		"class": "Armor",
-		"subclass": "Amulets",
-		"slot": "Neck"
-	},
-	"109952": {
-		"name": "Skulltooth Chain",
-		"class": "Armor",
-		"subclass": "Amulets",
-		"slot": "Neck"
-	},
-	"109953": {
-		"name": "Windseal Necklace",
-		"class": "Armor",
-		"subclass": "Amulets",
-		"slot": "Neck"
-	},
-	"109965": {
-		"name": "Fistbreak Choker",
-		"class": "Armor",
-		"subclass": "Amulets",
-		"slot": "Neck"
-	},
-	"109966": {
-		"name": "Reinforced Bloodsteel Gorget",
-		"class": "Armor",
-		"subclass": "Amulets",
-		"slot": "Neck"
-	},
-	"109967": {
-		"name": "Necklace of Holy Deflection",
-		"class": "Armor",
-		"subclass": "Amulets",
-		"slot": "Neck"
-	},
-	"109969": {
-		"name": "Choker of Weeping Viscera",
-		"class": "Armor",
-		"subclass": "Amulets",
-		"slot": "Neck"
-	},
-	"109975": {
-		"name": "Hood of Burning Focus",
+	{
+		"id": 109849,
+		"name": "Bloodfeather Grips",
 		"class": "Armor",
 		"subclass": "Leather Armor",
-		"slot": "Head"
+		"slot": "Gloves",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109849/bloodfeather-grips"
 	},
-	"109976": {
-		"name": "Bloodfeather Cowl",
+	{
+		"id": 109850,
+		"name": "Crystalbinder Gloves",
 		"class": "Armor",
 		"subclass": "Leather Armor",
-		"slot": "Head"
+		"slot": "Gloves",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109850/crystalbinder-gloves"
 	},
-	"109977": {
-		"name": "Crystalbinder Helm",
+	{
+		"id": 109848,
+		"name": "Gauntlets of Burning Focus",
 		"class": "Armor",
 		"subclass": "Leather Armor",
-		"slot": "Head"
+		"slot": "Gloves",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109848/gauntlets-of-burning-focus"
 	},
-	"109978": {
-		"name": "Leafmender Hood",
+	{
+		"id": 109851,
+		"name": "Leafmender Grips",
 		"class": "Armor",
 		"subclass": "Leather Armor",
-		"slot": "Head"
+		"slot": "Gloves",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109851/leafmender-grips"
 	},
-	"109979": {
-		"name": "Blackwater Helm",
-		"class": "Armor",
-		"subclass": "Leather Armor",
-		"slot": "Head"
-	},
-	"110015": {
-		"name": "Toria's Unseeing Eye",
-		"class": "Armor",
-		"subclass": "Trinkets",
-		"slot": "Trinket"
-	},
-	"110040": {
+	{
+		"id": 110040,
 		"name": "Crushto's Neck Separator",
 		"class": "Weapon",
 		"subclass": "Polearms",
-		"slot": "Two-Hand"
+		"slot": "Two-Hand",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=110040/crushtos-neck-separator"
+	},
+	{
+		"id": 109882,
+		"name": "Blackwater Wristguards",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109882/blackwater-wristguards"
+	},
+	{
+		"id": 109869,
+		"name": "Bloodfeather Bracers",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109869/bloodfeather-bracers"
+	},
+	{
+		"id": 109868,
+		"name": "Bracers of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109868/bracers-of-burning-focus"
+	},
+	{
+		"id": 109870,
+		"name": "Crystalbinder Wristguards",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109870/crystalbinder-wristguards"
+	},
+	{
+		"id": 109871,
+		"name": "Leafmender Wraps",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Wrist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109871/leafmender-wraps"
+	},
+	{
+		"id": 109823,
+		"name": "Blackwater Leggings",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109823/blackwater-leggings"
+	},
+	{
+		"id": 109810,
+		"name": "Bloodfeather Leggings",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109810/bloodfeather-leggings"
+	},
+	{
+		"id": 109811,
+		"name": "Crystalbinder Legwraps",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109811/crystalbinder-legwraps"
+	},
+	{
+		"id": 109812,
+		"name": "Leafmender Legwraps",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109812/leafmender-legwraps"
+	},
+	{
+		"id": 109809,
+		"name": "Legguards of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Legs",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109809/legguards-of-burning-focus"
+	},
+	{
+		"id": 109904,
+		"name": "Cloak of Cascading Blades",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109904/cloak-of-cascading-blades"
+	},
+	{
+		"id": 109929,
+		"name": "Cloak of Steeled Nerves",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109929/cloak-of-steeled-nerves"
+	},
+	{
+		"id": 109906,
+		"name": "Cloak of Violent Harmony",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109906/cloak-of-violent-harmony"
+	},
+	{
+		"id": 109905,
+		"name": "Deadshot Greatcloak",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109905/deadshot-greatcloak"
+	},
+	{
+		"id": 109916,
+		"name": "Drape of Swirling Deflection",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109916/drape-of-swirling-deflection"
+	},
+	{
+		"id": 109915,
+		"name": "Rigid Scale Cloak",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109915/rigid-scale-cloak"
+	},
+	{
+		"id": 109918,
+		"name": "Soot-Scarred Longcloak",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109918/soot-scarred-longcloak"
+	},
+	{
+		"id": 109917,
+		"name": "Three-Clefthoof Cape",
+		"class": "Armor",
+		"subclass": "Cloak",
+		"slot": "Back",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109917/three-clefthoof-cape"
+	},
+	{
+		"id": 109799,
+		"name": "Blackwater Boots",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109799/blackwater-boots"
+	},
+	{
+		"id": 109788,
+		"name": "Bloodfeather Treads",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109788/bloodfeather-treads"
+	},
+	{
+		"id": 109787,
+		"name": "Boots of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109787/boots-of-burning-focus"
+	},
+	{
+		"id": 109789,
+		"name": "Crystalbinder Sandals",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109789/crystalbinder-sandals"
+	},
+	{
+		"id": 109798,
+		"name": "Leafmender Sandals",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Feet",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109798/leafmender-sandals"
+	},
+	{
+		"id": 110015,
+		"name": "Toria's Unseeing Eye",
+		"class": "Armor",
+		"subclass": "Trinkets",
+		"slot": "Trinket",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=110015/torias-unseeing-eye"
+	},
+	{
+		"id": 109979,
+		"name": "Blackwater Helm",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109979/blackwater-helm"
+	},
+	{
+		"id": 109976,
+		"name": "Bloodfeather Cowl",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109976/bloodfeather-cowl"
+	},
+	{
+		"id": 109977,
+		"name": "Crystalbinder Helm",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109977/crystalbinder-helm"
+	},
+	{
+		"id": 109975,
+		"name": "Hood of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109975/hood-of-burning-focus"
+	},
+	{
+		"id": 109978,
+		"name": "Leafmender Hood",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Head",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109978/leafmender-hood"
+	},
+	{
+		"id": 109938,
+		"name": "Blackwater Spaulders",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109938/blackwater-spaulders"
+	},
+	{
+		"id": 109935,
+		"name": "Bloodfeather Spaulders",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109935/bloodfeather-spaulders"
+	},
+	{
+		"id": 109936,
+		"name": "Crystalbinder Shoulderpads",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109936/crystalbinder-shoulderpads"
+	},
+	{
+		"id": 109937,
+		"name": "Leafmender Mantle",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109937/leafmender-mantle"
+	},
+	{
+		"id": 109934,
+		"name": "Spaulders of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Shoulder",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109934/spaulders-of-burning-focus"
+	},
+	{
+		"id": 109779,
+		"name": "Ancient Draenic Loop",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109779/ancient-draenic-loop"
+	},
+	{
+		"id": 109783,
+		"name": "Band of the Stalwart Stanchion",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109783/band-of-the-stalwart-stanchion"
+	},
+	{
+		"id": 109775,
+		"name": "Bladebinder Ring",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109775/bladebinder-ring"
+	},
+	{
+		"id": 109761,
+		"name": "Bloodthorn Band",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109761/bloodthorn-band"
+	},
+	{
+		"id": 109760,
+		"name": "Ced's Chiming Circle",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109760/ceds-chiming-circle"
+	},
+	{
+		"id": 109759,
+		"name": "Ro-Ger's Brown Diamond Seal",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109759/ro-gers-brown-diamond-seal"
+	},
+	{
+		"id": 109776,
+		"name": "Seal of Resilient Fortitude",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109776/seal-of-resilient-fortitude"
+	},
+	{
+		"id": 109762,
+		"name": "Signet of Radiant Leaves",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109762/signet-of-radiant-leaves"
+	},
+	{
+		"id": 109778,
+		"name": "Signet of the Glorious Protector ",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109778/signet-of-the-glorious-protector"
+	},
+	{
+		"id": 109777,
+		"name": "Unsullied Signet",
+		"class": "Armor",
+		"subclass": "Rings",
+		"slot": "Finger",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109777/unsullied-signet"
+	},
+	{
+		"id": 109969,
+		"name": "Choker of Weeping Viscera",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109969/choker-of-weeping-viscera"
+	},
+	{
+		"id": 109951,
+		"name": "Fireblade Collar",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109951/fireblade-collar"
+	},
+	{
+		"id": 109965,
+		"name": "Fistbreak Choker",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109965/fistbreak-choker"
+	},
+	{
+		"id": 109967,
+		"name": "Necklace of Holy Deflection",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109967/necklace-of-holy-deflection"
+	},
+	{
+		"id": 109966,
+		"name": "Reinforced Bloodsteel Gorget",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109966/reinforced-bloodsteel-gorget"
+	},
+	{
+		"id": 109952,
+		"name": "Skulltooth Chain",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109952/skulltooth-chain"
+	},
+	{
+		"id": 109950,
+		"name": "Stormshot Choker",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109950/stormshot-choker"
+	},
+	{
+		"id": 109953,
+		"name": "Windseal Necklace",
+		"class": "Armor",
+		"subclass": "Amulets",
+		"slot": "Neck",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109953/windseal-necklace"
+	},
+	{
+		"id": 109829,
+		"name": "Belt of Burning Focus",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109829/belt-of-burning-focus"
+	},
+	{
+		"id": 109842,
+		"name": "Blackwater Belt",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109842/blackwater-belt"
+	},
+	{
+		"id": 109830,
+		"name": "Bloodfeather Girdle",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109830/bloodfeather-girdle"
+	},
+	{
+		"id": 109831,
+		"name": "Crystalbinder Belt",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109831/crystalbinder-belt"
+	},
+	{
+		"id": 109832,
+		"name": "Leafmender Girdle",
+		"class": "Armor",
+		"subclass": "Leather Armor",
+		"slot": "Waist",
+		"quality": "Rare",
+		"wowhead_link": "https://www.wowhead.com/item=109832/leafmender-girdle"
 	}
- }
+]

@@ -12,22 +12,19 @@
 	<script src="script.js"></script>
 </head>
 <body>
+	<div class="content">
 	<h1>WoD dungeon warforged simulator</h1>
+	<h2>Guardian Druid</h2>
+	<p>Bloodmaul Slag Mines and Shadowmoon Burial Grounds</p>
 	<p>
-		Simulating a Guardian Druid running 5 x Bloodmaul Slag Mines, followed by 5 x Shadowmoon Burial Grounds.<br />
-		Stopping when all slots are warforged, have a socket where possible and have leech or speed tertirary.
-		<P>warforged + socket + speed/leech > warforged + socket > warforged + speed/leech > warforged > socket > speed/leech</P>
-	</p>
-	<p>
-		<label for="upgrade_chance_percent">Upgrade chance:</label>
-		<input type="number" id="upgrade_chance_percent" name="upgrade_chance_percent" min="0" max="100" value="10" readonly />%
+		Upgrade chance: 10%
 	</p>
 	<p>
 		<button type="button" class="button" onclick="start()">Start</button>
 		<button type="button" class="button" onclick="slower()">Slower</button>
 		<button type="button" class="button" onclick="faster()">Faster</button>
 		<button type="button" class="button" onclick="fastest()">Fastest</button>
-		<button type="button" class="button" onclick="stop()">Stop</button>
+		<button type="button" class="button" onclick="pause()">Pause</button>
 		<button type="button" class="button" onclick="resume()">Resume</button>
 		<button type="button" class="button" onclick="reset()">Reset</button>
 	</p>
@@ -40,15 +37,18 @@
 				<tr>
 					<th></th>
 					<th width="250px"></th>
-					<th width="50px" style="text-align: center">Warforged</th>
-					<th width="50px" style="text-align: center">Socket</th>
-					<th width="50px" style="text-align: center">Speed</th>
-					<th width="50px" style="text-align: center">Leech</th>
+					<th width="25px" style="text-align: center">wfg</th>
+					<th width="25px" style="text-align: center">skt</th>
+					<th width="25px" style="text-align: center">avd</th>
+					<th width="25px" style="text-align: center">ind</th>
+					<th width="25px" style="text-align: center">lch</th>
+					<th width="25px" style="text-align: center">spd</th>
 				</tr>
 			</thead>
 			<tbody id="table_contents">
 			</tbody>
 		</table>
 	</p>
+</div>
 </body>
 </html>
