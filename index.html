@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WoD dungeon warforged simulator</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css" />
-	<script src="https://wow.zamimg.com/js/tooltips.js"></script>
-	<script src="script.js"></script>
-</head>
-<body>
-	<div class="content">
-	<h1>WoD dungeon warforged simulator</h1>
-	<h2>Guardian Druid</h2>
-	<p>Bloodmaul Slag Mines and Shadowmoon Burial Grounds</p>
-	<p>
-		Upgrade chance: 10%
-	</p>
-	<p>
-		<button type="button" class="button" onclick="start()">Start</button>
-		<button type="button" class="button" onclick="slower()">Slower</button>
-		<button type="button" class="button" onclick="faster()">Faster</button>
-		<button type="button" class="button" onclick="fastest()">Fastest</button>
-		<button type="button" class="button" onclick="pause()">Pause</button>
-		<button type="button" class="button" onclick="resume()">Resume</button>
-		<button type="button" class="button" onclick="reset()">Reset</button>
-	</p>
-	<p>
-		<div id="count"></div>
-	</p>
-	<p>
-		<table>
-			<thead>
-				<tr>
-					<th></th>
-					<th width="250px"></th>
-					<th width="25px" style="text-align: center">wfg</th>
-					<th width="25px" style="text-align: center">skt</th>
-					<th width="25px" style="text-align: center">avd</th>
-					<th width="25px" style="text-align: center">ind</th>
-					<th width="25px" style="text-align: center">lch</th>
-					<th width="25px" style="text-align: center">spd</th>
-				</tr>
-			</thead>
-			<tbody id="table_contents">
-			</tbody>
-		</table>
-	</p>
-</div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Warforged of WoD Craft</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://wow.zamimg.com/js/tooltips.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class='centre'>
+			<div>
+				<h1>Warforged of WoD Craft</h1>
+			</div>
+			<p>A simulation of running 5x Bloodmaul Slag Mines followed by 5x Shadowmoon Burial Grounds
+				aiming for warforged with socket and speed.</p>
+			<div>
+				<h2 class="colour-druid">Guardian Druid</h2>
+			</div>
+			<div class="row">
+				<div class="column">
+					<button type="button" class="button" onclick="run()">RUN</button>
+				</div>
+				<div class="column">
+					<button type="button" class="button" onclick="pause()">PAUSE</button>
+				</div>
+				<div class="column">
+					<button type="button" class="button" onclick="resume()">RESUME</button>
+				</div>
+				<div class="column">
+					<button type="button" class="button" onclick="reset()">RESET</button>
+				</div>
+				<div class="column">
+					<button type="button" class="button" onclick="slower()">SLOWER</button>
+				</div>
+				<div class="column">
+					<button type="button" class="button" onclick="faster()">FASTER</button>
+				</div>
+				<div class="column">
+					<button type="button" class="button" onclick="fastest()">FASTEST</button>
+				</div>
+			</div>
+			<div class="box">
+				<div class="row row-border">
+					<div class='column caption'>Stats</div>
+				</div>
+				<div class="row">
+					<div id="stats-cell" class="column">
+					</div>
+				</div>
+			</div>
+			<div id="gear-box" class="box">
+				<div class="row row-border">
+					<div class='column caption'>Gear</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

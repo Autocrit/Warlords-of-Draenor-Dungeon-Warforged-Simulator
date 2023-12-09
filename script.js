@@ -10,7 +10,7 @@ let upgrade_chance_percent = 10;
 
 let interval = 1000;
 
-let run = false;
+let keep_running = false;
 
 let timer_id = 0;
 
@@ -20,7 +20,26 @@ let dungeon_run_pattern =  [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ];
 let can_socket = [ "Head", "Neck", "Wrist", "Finger" ];
 
 let tertiaries = [ "avoidance", "indestructible", "leech", "speed" ];
-
+/*
+let tertiaries2 = [
+	{
+		"name": "avoidance",
+		"wowhead_code":
+	},
+	{
+		"name": "indestructible"
+		"wowhead_code":
+	},
+	{
+		"name": "leech"
+		"wowhead_code":
+	},
+	{
+		"name": "speed"
+		"wowhead_code":
+	}
+];
+*/
 let starter_gear_set = [
 	{
 		"slot": "Head",
@@ -144,8 +163,8 @@ let slots = [
 	{ "name": "Finger 2", "can_socket": true },
 	{ "name": "Trinket 1" },
 	{ "name": "Trinket 2", "ignore": true },
-	{ "name": "Main Hand" },
-	{ "name": "Off Hand", "ignore": true }
+	{ "name": "Main Hand" }/*,
+	{ "name": "Off Hand", "ignore": true }*/
 ];
 
 const items = [
@@ -945,7 +964,7 @@ const dungeons = [
 
 function init_slots()
 {
-	for(var i=0; i<slots.length; i++)
+	for(let i=0; i<slots.length; i++)
 	{
 		let slot = slots[i];
 
@@ -996,9 +1015,13 @@ function get_item_score(item)
 	{
 		//item_score += 1;
 	}
-	else if(item.tertiary == "speed" || item.tertiary == "leech")
+	else if(item.tertiary == "leech")
 	{
 		item_score += 2;
+	}
+	else if(item.tertiary == "speed")
+	{
+		item_score += 4;
 	}
 
 	if(item.socket)
@@ -1021,13 +1044,28 @@ function upgrade_slot(item, slot1, slot2/*optional*/)
 
 	let upgrade_score = item_score - slot1.item_score;
 
+	let upgrade_score1 = upgrade_score;
+
 	if(slot2 != undefined)
 	{
 		let upgrade_score_2 = item_score - slot2.item_score;
 
+		//console.log(item.id + ", 1: " + slot1.item_id + "2:" + slot2.item_id);
+
 		// Check if already equipped and whether to upgrade slot 1 or 2
-		if((item.item_id == slot2.item_id) || (upgrade_score_2 > upgrade_score))
+		if(item.id == slot1.item_id) 
 		{
+			// Already equipped in slot 1 so can upgrade slot 1
+		}
+		else if(item.id == slot2.item_id)
+		{
+			// Already equipped in slot 2 so can upgrade slot 2
+			upgrade_score = upgrade_score_2;
+			slot = slot2;
+		}
+		else if(upgrade_score_2 > upgrade_score)
+		{
+			// Not equipped in either slot and a bigger upgrade for slot 2
 			upgrade_score = upgrade_score_2;
 			slot = slot2;
 		}
@@ -1050,149 +1088,132 @@ function upgrade_slot(item, slot1, slot2/*optional*/)
 		return false;
 }
 
+function init_gear_box()
+{
+	let gear_box = document.getElementById("gear-box");
+
+	for(let i=0; i<slots.length; i++)
+	{
+		let row = document.createElement("div");
+		row.setAttribute("class", "row row-border");
+		gear_box.appendChild(row);
+
+		let name_cell = document.createElement("div");
+		name_cell.setAttribute("id", slots[i].name + "-name-cell");
+		name_cell.setAttribute("class", "column");
+		row.appendChild(name_cell);
+
+		let bonus_cell = document.createElement("span");
+		bonus_cell.setAttribute("id", slots[i].name + "-bonus-cell");
+		bonus_cell.setAttribute("class", "bonus-cell");
+		row.appendChild(bonus_cell);
+	}
+}
+
 function update_slots()
 {
-	let tbody = document.getElementById("table_contents");
-
-	// Clear table
-//	while(slots_element.hasChildNodes()) {
-//		slots_element.removeChild(slots_element.lastChild);
-//	}
-
-	// Init table
-	if(tbody.rows.length == 0)
-	{
-		for(let i=0; i<slots.length; i++)
-		{
-			let row = tbody.insertRow();
-			
-			// Slot
-			let cell = row.insertCell();
-			cell.textContent = slots[i].name;
-
-			// Item link
-			row.insertCell();
-
-			// wf, socket, avoiddance, indestructible, leech, speed
-			for(let j=0; j<6; j++)
-			{
-				let checkbox = document.createElement("input");
-				checkbox.setAttribute("type", "checkbox");
-				checkbox.setAttribute("checked", "checked");
-				checkbox.setAttribute("disabled", "disabled");
-				checkbox.setAttribute("hidden", "hidden");
-
-				cell = row.insertCell();
-				cell.setAttribute("style", "text-align: center");
-				cell.appendChild(checkbox);
-			}
-		}
-	}
-
-	for(var i=0; i<slots.length; i++)
+	for(let i=0; i<slots.length; i++)
 	{
 		let slot = slots[i];
-		let row = tbody.rows[i];
-		let item_cell = row.cells[1];
-		let warforged_cell = row.cells[2];
-		let socket_cell = row.cells[3];
-		let speed_cell = row.cells[4];
-		let leech_cell = row.cells[5];
+		let name_cell = document.getElementById(slots[i].name + "-name-cell");
+		let bonus_cell = document.getElementById(slots[i].name + "-bonus-cell");
+		let bonus_text = "";
 
-		while(item_cell.hasChildNodes())
-			item_cell.removeChild(item_cell.lastChild);
+		// Remove existing link
+		while(name_cell.hasChildNodes())
+		name_cell.removeChild(name_cell.lastChild);
 
-		if(slot.warforged)
+		if(slots[i].item_id != 0)
 		{
-			warforged_cell.firstChild.removeAttribute("hidden");
-		}
-		else
-		{
-			warforged_cell.firstChild.setAttribute("hidden", "hidden");
-		}
-
-		if(slot.socket)
-		{
-			socket_cell.firstChild.removeAttribute("hidden");
-		}
-		else
-		{
-			socket_cell.firstChild.setAttribute("hidden", "hidden");
-		}
-
-		for(let j=0; j<tertiaries.length; j++)
-		{
-			if(slot.tertiary == tertiaries[j])
-			{
-				row.cells[j+4].firstChild.removeAttribute("hidden");
-			}
-			else
-			{
-				row.cells[j+4].firstChild.setAttribute("hidden", "hidden");
-			}
-		}
-
-		if(slot.item_id != 0)
-		{
-			let item = get_item_by_item_id(slot.item_id);
+			let item = get_item_by_item_id(slots[i].item_id);
+			let wowhead_link = "", wowhead_bonus = "", wowhead_link_colour = "colour-rare";
 
 			let anchor = document.createElement("a");
-			let url = item.wowhead_link;
-			let colour = "color-rare";
-			let bonus = "";
+			wowhead_link = item.wowhead_link;
 
 			if(slot.item_quality == "Heirloom")
-				colour = "color-heirloom";
-			else if(slot.item_quality == "Epic")
-				colour = "color-epic";
-
-				if(slot.warforged)
 			{
-				bonus += "4746";
+				wowhead_link_colour = "colour-heirloom";
+			}
+			else if(slot.item_quality == "Epic")
+			{
+				wowhead_link_colour = "colour-epic";
+			}
+
+			if(slot.warforged)
+			{
+				wowhead_bonus += "4746";
+				//bonus_text += " [wf]";
+				bonus_text += " [warforged]";
 			}
 
 			if(slot.socket)
 			{
-				if(bonus.length > 0)
-					bonus += ":";
-				bonus += "8810";
+				if(wowhead_bonus.length > 0)
+				{
+					wowhead_bonus += ":";
+				}
+				wowhead_bonus += "8810";
+				//bonus_text += " [sk]";
+				bonus_text += " [socket]";
 			}
 
 			if(slot.tertiary == "avoidance")
 			{
-				if(bonus.length > 0)
-					bonus += ":";
-				bonus += "40";
+				if(wowhead_bonus.length > 0)
+				{
+					wowhead_bonus += ":";
+				}
+				wowhead_bonus += "40";
+				//bonus_text += " [av]";
 			}
 			else if(slot.tertiary == "indestructible")
 			{
-				if(bonus.length > 0)
-					bonus += ":";
-				bonus += "43";
+				if(wowhead_bonus.length > 0)
+				{
+					wowhead_bonus += ":";
+				}
+				wowhead_bonus += "43";
+				//bonus_text += " [in]";
 			}
 			else if(slot.tertiary == "leech")
 			{
-				if(bonus.length > 0)
-					bonus += ":";
-				bonus += "41";
+				if(wowhead_bonus.length > 0)
+				{
+					wowhead_bonus += ":";
+				}
+				wowhead_bonus += "41";
+				//bonus_text += " [le]";
 			}
 			else if(slot.tertiary == "speed")
 			{
-				if(bonus.length > 0)
-					bonus += ":";
-				bonus += "42";
+				if(wowhead_bonus.length > 0)
+				{
+					wowhead_bonus += ":";
+				}
+				wowhead_bonus += "42";
+				//bonus_text += " [sp]";
 			}
 
-			if(bonus.length > 0)
-				url += "?bonus=" + bonus;
+			if(wowhead_bonus.length > 0)
+			{
+				wowhead_link += "?bonus=" + wowhead_bonus;
+			}
 
-			url += "&ilvl=" + slot.ilevel;
-			anchor.setAttribute("href", url);
-			anchor.setAttribute("class", colour);
+			wowhead_link += "&ilvl=" + slots[i].ilevel;
+			anchor.setAttribute("href", wowhead_link);
+			anchor.setAttribute("class", wowhead_link_colour);
 
 			anchor.textContent = item.name;
 
-			item_cell.appendChild(anchor);
+			name_cell.appendChild(anchor);
+
+			if(slot.tertiary.length > 0)
+			{
+				bonus_text += " [" + slot.tertiary + "]";
+			}
+
+			bonus_cell.textContent = bonus_text;
 		}
 	}
 }
@@ -1209,12 +1230,13 @@ function update_stats()
 	}
 
 	let text = dungeon_count + " dungeon(s), " + boss_count + " boss(es)\n";
-	text += "Warforged: " + wf_percent.toFixed(2) + "%\n";
-	text += "Warforged + socket: " + wf_socket_percent.toFixed(2) + "%\n";
-	text += "Warforged + tertiary: " + wf_tert_percent.toFixed(2) + "%\n";
-	text += "Warforged + socket + tertiary: " + wf_socket_tert_percent.toFixed(2) + "%";
+	text += "Assumed upgrade chance: " + upgrade_chance_percent + "%\n";
+	text += "Warforged: " + wf_count + " (" + wf_percent.toFixed(2) + "%)\n";
+	text += "Warforged + socket: " + wf_socket_count + " (" + wf_socket_percent.toFixed(2) + "%)\n";
+	text += "Warforged + tertiary: " + wf_tert_count + " (" + wf_tert_percent.toFixed(2) + "%)\n";
+	text += "Warforged + socket + tertiary: " + wf_socket_tert_count + " (" + wf_socket_tert_percent.toFixed(2) + "%)";
 
-	document.getElementById("count").innerText = text;
+	document.getElementById("stats-cell").innerText = text;
 }
 
 function rand_int(min, max)
@@ -1246,7 +1268,7 @@ function is_fully_upgraded()
 	{
 		if(slots[i].ignore == false && (slots[i].warforged == false ||
 			(slots[i].can_socket == true && slots[i].socket == false) ||
-			slots[i].tertiary == "" || slots[i].tertiary == "avoidance" || slots[i].tertiary == "indestructible"))
+			slots[i].tertiary == "" || slots[i].tertiary != "speed"))
 			return false;
 	}
 
@@ -1349,15 +1371,16 @@ function step()
 	{
 		update_slots();
 
-		if(is_fully_warforged())
-			run = false;
+		//if(is_fully_warforged())
+		if(is_fully_upgraded())
+			keep_running = false;
 	}
 
-	if(run)
+	if(keep_running)
 		timer_id = setTimeout(step, interval);
 }
 
-function start()
+function run()
 {
 	reset();
 	resume();
@@ -1367,7 +1390,7 @@ function resume()
 {
 	clearTimeout(timer_id);
 
-	run = true;
+	keep_running = true;
 	step();
 }
 
@@ -1375,7 +1398,7 @@ function pause()
 {
 	clearTimeout(timer_id);
 
-	run = false;
+	keep_running = false;
 }
 
 function faster()
@@ -1383,7 +1406,7 @@ function faster()
 	clearTimeout(timer_id);
 	interval = interval / 2;
 
-	if(run == true)
+	if(keep_running == true)
 		resume();
 }
 
@@ -1392,7 +1415,7 @@ function fastest()
 	clearTimeout(timer_id);
 	interval = 0;
 
-	if(run == true)
+	if(keep_running == true)
 		resume();
 }
 
@@ -1401,7 +1424,7 @@ function slower()
 	clearTimeout(timer_id);
 	interval = interval * 2;
 
-	if(run == true)
+	if(keep_running == true)
 		resume();
 }
 
@@ -1429,5 +1452,6 @@ function reset()
 
 window.onload = function onLoad()
 {
+	init_gear_box();
 	reset();
 }

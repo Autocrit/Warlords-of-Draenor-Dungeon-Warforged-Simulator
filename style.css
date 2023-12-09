@@ -1,42 +1,78 @@
-body, html {
-	background-color: #202124;
-	font-family: Open Sans,Arial,Helvetica,sans-serif;
-	color: #ffffff;
-	background-image: url('images/bear_1.png');
+body {
+	background-color: black;
+    color: #e1f2f5;
+	font-family: Open Sans, Arial, Helvetica, sans-serif;
+	background-image: url('images/bear_8.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	background-position: center;
 }
 
-.content {
-	max-width: 1000px;
+.centre {
+	font-size: 15px;
 	margin: auto;
+	width: 640px;
 }
 
-.color-rare {
-	color: #0081ff;
+.box {
+	border: 1px solid #555555;
 }
 
-.color-epic {
-	color: #c600ff;
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	break-inside: avoid;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
-.color-heirloom {
-    color: #0cf;
+.row-border {
+	border-bottom: 1px solid #555555;
 }
 
-.button {
-	font-size: 16px;
+.row-no-border {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	break-inside: avoid;
+	white-space: nowrap;
+	overflow: hidden;
 }
-
-table {
-	border-collapse: collapse;
-}
-
-th, td {
+  
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+	flex: 1;
 	padding: 4px;
 }
 
-tr:nth-child(even) { 
-	background-color: rgba(40,41,45,.33); 
+.caption {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.bonus-cell {
+	/*margin-right: 5px;*/
+	padding: 4px;
+}
+
+.colour-heirloom {
+    color: #0cf;
+}
+
+.colour-rare {
+	color: #0081ff;
+}
+
+.colour-epic {
+	color: #c600ff;
+}
+
+.colour-druid {
+    color: #ff7c0a;
 }
