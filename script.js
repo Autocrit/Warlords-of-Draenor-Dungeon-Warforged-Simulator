@@ -19,75 +19,71 @@ let dungeon_run_pattern =  [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ];
 
 let can_socket = [ "Head", "Neck", "Wrist", "Finger" ];
 
-let tertiaries = [ "avoidance", "indestructible", "leech", "speed" ];
-/*
-let tertiaries2 = [
-	{
-		"name": "avoidance",
-		"wowhead_code":
-	},
-	{
-		"name": "indestructible"
-		"wowhead_code":
-	},
-	{
-		"name": "leech"
-		"wowhead_code":
-	},
-	{
-		"name": "speed"
-		"wowhead_code":
-	}
+let tertiaries = [
+	{ "name": "avoidance", "code": 40 },
+	{ "name": "indestructible", "code": 43 },
+	{ "name": "leech", "code": 41 },
+	{ "name": "speed", "code": 42 }
 ];
-*/
-let starter_gear_set = [
+
+let starter_gear = [
 	{
 		"slot": "Head",
+		"can_socket": true,
 		"item": {
 			"id": 122248,
-			"ilevel": 26
+			"ilevel": 26,
+			"quality": "Heirloom"
 		}
 	},
 	{
 		"slot": "Neck",
+		"can_socket": true,
 		"item": {
 			"id": 122667,
-			"ilevel": 26
+			"ilevel": 26,
+			"quality": "Heirloom"
 		}
 	},
 	{
 		"slot": "Shoulder",
 		"item": {
 			"id": 122358,
-			"ilevel": 26
+			"ilevel": 26,
+			"quality": "Heirloom"
 		}
 	},
 	{
 		"slot": "Back",
 		"item": {
 			"id": 160984,
-			"ilevel": 33
+			"ilevel": 33,
+			"quality": "Rare"
 		}
 	},
 	{
 		"slot": "Chest",
 		"item": {
 			"id": 122383,
-			"ilevel": 26
+			"ilevel": 26,
+			"quality": "Heirloom"
 		}
 	},
 	{
 		"slot": "Wrist",
+		"can_socket": true,
 		"item": {
 			"id": 154478,
-			"ilevel": 33
+			"ilevel": 33,
+			"quality": "Rare"
 		}
 	},
 	{
 		"slot": "Gloves",
 		"item": {
 			"id": 160460,
-			"ilevel": 33
+			"ilevel": 33,
+			"quality": "Rare"
 		}
 	},
 	{
@@ -101,71 +97,64 @@ let starter_gear_set = [
 		"slot": "Legs",
 		"item": {
 			"id": 160461,
-			"ilevel": 33
+			"ilevel": 33,
+			"quality": "Rare"
 		}
 	},
 	{
 		"slot": "Feet",
 		"item": {
 			"id": 161091,
-			"ilevel": 33
+			"ilevel": 33,
+			"quality": "Rare"
 		}
 	},
 	{
 		"slot": "Finger 1",
+		"can_socket": true,
 		"item": {
 			"id": 155381,
-			"ilevel": 33
+			"ilevel": 33,
+			"quality": "Rare"
 		}
 	},
 	{
 		"slot": "Finger 2",
+		"can_socket": true,
 		"item": {
 			"id": 161446,
-			"ilevel": 33
+			"ilevel": 33,
+			"quality": "Rare"
 		}
 	},
 	{
 		"slot": "Trinket 1",
 		"item": {
 			"id": 158556,
-			"ilevel": 33
+			"ilevel": 33,
+			"quality": "Rare"
 		}
 	},
 	{
 		"slot": "Trinket 2",
+		"complete": true,
 		"item": {
 			"id": 178769,
-			"ilevel": 33
+			"ilevel": 33,
+			"quality": "Rare"
 		}
 	},
 	{
 		"slot": "Main Hand",
 		"item": {
 			"id": 140773,
-			"ilevel": 26
+			"ilevel": 26,
+			"quality": "Heirloom"
 		}
 	}
 ];
 
-let slots = [
-	{ "name": "Head", "can_socket": true },
-	{ "name": "Neck", "can_socket": true },
-	{ "name": "Shoulder" },
-	{ "name": "Back" },
-	{ "name": "Chest" },
-	{ "name": "Wrist", "can_socket": true },
-	{ "name": "Gloves" },
-	{ "name": "Waist" },
-	{ "name": "Legs" },
-	{ "name": "Feet" },
-	{ "name": "Finger 1", "can_socket": true },
-	{ "name": "Finger 2", "can_socket": true },
-	{ "name": "Trinket 1" },
-	{ "name": "Trinket 2", "ignore": true },
-	{ "name": "Main Hand" }/*,
-	{ "name": "Off Hand", "ignore": true }*/
-];
+let gear = [];
 
 const items = [
 	{
@@ -962,37 +951,35 @@ const dungeons = [
 	}
 ];
 
-function init_slots()
+function init_gear()
 {
-	for(let i=0; i<slots.length; i++)
+	gear = [];
+
+	for(let i=0; i<starter_gear.length; i++)
 	{
-		let slot = slots[i];
+		gear[i] = Object.assign({}, starter_gear[i]);
 
-		if(slot.can_socket == undefined || slot.can_socket == false)
-			slot.can_socket = false;
-
-		if(slot.ignore == undefined || slot.ignore == false)
-			slot.ignore = false;
-
-		slot.item_score = 0;
-		slot.warforged = false;
-		slot.socket = false;
-		slot.tertiary = "";
-
-		let starter_item = starter_gear_set.find(starter_item => starter_item.slot == slot.name);
-
-		if(starter_item == undefined)
+		if(gear[i].item.warforged == undefined)
 		{
-			slot.item_id = 0;
-			slot.ilevel = 0;
+			gear[i].item.warforged = false;
 		}
-		else
+		
+		if(gear[i].item.socket == undefined)
 		{
-			slot.item_id = starter_gear_set[i].item.id;
-			slot.ilevel = starter_gear_set[i].item.ilevel;
-			let item = get_item_by_item_id(starter_gear_set[i].item.id);
-			slot.item_quality = item.quality;
+			gear[i].item.socket = false;
 		}
+			
+		if(gear[i].item.tertiary == undefined)
+		{
+			gear[i].item.tertiary = -1;
+		}
+
+		if(gear[i].complete == undefined)
+		{
+			gear[i].complete = false;
+		}
+
+		gear[i].item.score = get_item_score(gear[i].item);
 	}
 }
 
@@ -1005,21 +992,17 @@ function get_item_by_item_id(id)
 function get_item_score(item)
 {
 	// warforged > socket > tertiary
-	let item_score = 0;
-	if(item.item_id != 0)
-	{
-		item_score = item.ilevel;
-	}
+	let item_score = item.ilevel;
 
-	if(item.tertiary == "avoidance" || item.tertiary == "indestructible")
+	if(item.tertiary == 0 || item.tertiary == 1)
 	{
-		//item_score += 1;
+		item_score += 1;
 	}
-	else if(item.tertiary == "leech")
+	else if(item.tertiary == 3)
 	{
 		item_score += 2;
 	}
-	else if(item.tertiary == "speed")
+	else if(item.tertiary == 4)
 	{
 		item_score += 4;
 	}
@@ -1029,11 +1012,6 @@ function get_item_score(item)
 		item_score += 10;
 	}
 
-//	if(item.warforged)
-//	{
-//		item_score += 100;
-//	}
-
 	return item_score;
 }
 
@@ -1042,22 +1020,20 @@ function upgrade_slot(item, slot1, slot2/*optional*/)
 	let item_score = get_item_score(item);
 	let slot = slot1;
 
-	let upgrade_score = item_score - slot1.item_score;
-
-	let upgrade_score1 = upgrade_score;
+	let upgrade_score = item_score - slot1.item.score;
 
 	if(slot2 != undefined)
 	{
-		let upgrade_score_2 = item_score - slot2.item_score;
+		let upgrade_score_2 = item_score - slot2.item.score;
 
 		//console.log(item.id + ", 1: " + slot1.item_id + "2:" + slot2.item_id);
 
 		// Check if already equipped and whether to upgrade slot 1 or 2
-		if(item.id == slot1.item_id) 
+		if(item.id == slot1.item.id) 
 		{
 			// Already equipped in slot 1 so can upgrade slot 1
 		}
-		else if(item.id == slot2.item_id)
+		else if(item.id == slot2.item.id)
 		{
 			// Already equipped in slot 2 so can upgrade slot 2
 			upgrade_score = upgrade_score_2;
@@ -1071,16 +1047,10 @@ function upgrade_slot(item, slot1, slot2/*optional*/)
 		}
 	}
 
-	if(upgrade_score > 0)
+	if(slot.complete != true && upgrade_score > 0)
 	{
-		slot.item_id = item.id;
-		slot.item_quality = item.quality;
-		slot.ilevel = item.ilevel;
-		slot.item_score = item_score;
-		slot.warforged = item.warforged;
-		slot.tertiary = item.tertiary;
-		if(slot.can_socket)
-			slot.socket = item.socket;
+		slot.item = Object.assign({}, item);
+		slot.item.score = item_score;
 
 		return true;
 	}
@@ -1092,19 +1062,19 @@ function init_gear_box()
 {
 	let gear_box = document.getElementById("gear-box");
 
-	for(let i=0; i<slots.length; i++)
+	for(let i=0; i<gear.length; i++)
 	{
 		let row = document.createElement("div");
 		row.setAttribute("class", "row row-border");
 		gear_box.appendChild(row);
 
 		let name_cell = document.createElement("div");
-		name_cell.setAttribute("id", slots[i].name + "-name-cell");
+		name_cell.setAttribute("id", gear[i].slot + "-name-cell");
 		name_cell.setAttribute("class", "column");
 		row.appendChild(name_cell);
 
 		let bonus_cell = document.createElement("span");
-		bonus_cell.setAttribute("id", slots[i].name + "-bonus-cell");
+		bonus_cell.setAttribute("id", gear[i].slot + "-bonus-cell");
 		bonus_cell.setAttribute("class", "bonus-cell");
 		row.appendChild(bonus_cell);
 	}
@@ -1112,42 +1082,41 @@ function init_gear_box()
 
 function update_slots()
 {
-	for(let i=0; i<slots.length; i++)
+	for(let i=0; i<gear.length; i++)
 	{
-		let slot = slots[i];
-		let name_cell = document.getElementById(slots[i].name + "-name-cell");
-		let bonus_cell = document.getElementById(slots[i].name + "-bonus-cell");
+		//let gear_slot = slots[i];
+		let name_cell = document.getElementById(gear[i].slot + "-name-cell");
+		let bonus_cell = document.getElementById(gear[i].slot + "-bonus-cell");
 		let bonus_text = "";
 
 		// Remove existing link
 		while(name_cell.hasChildNodes())
-		name_cell.removeChild(name_cell.lastChild);
+			name_cell.removeChild(name_cell.lastChild);
 
-		if(slots[i].item_id != 0)
+		if(gear[i].item.id != 0)
 		{
-			let item = get_item_by_item_id(slots[i].item_id);
-			let wowhead_link = "", wowhead_bonus = "", wowhead_link_colour = "colour-rare";
+			let item = get_item_by_item_id(gear[i].item.id);
+			let wowhead_link = item.wowhead_link, wowhead_bonus = "", wowhead_link_colour = "colour-rare";
 
 			let anchor = document.createElement("a");
-			wowhead_link = item.wowhead_link;
 
-			if(slot.item_quality == "Heirloom")
+			if(gear[i].item.quality == "Heirloom")
 			{
 				wowhead_link_colour = "colour-heirloom";
 			}
-			else if(slot.item_quality == "Epic")
+			else if(gear[i].item.quality == "Epic")
 			{
 				wowhead_link_colour = "colour-epic";
 			}
 
-			if(slot.warforged)
+			if(gear[i].item.warforged)
 			{
 				wowhead_bonus += "4746";
 				//bonus_text += " [wf]";
 				bonus_text += " [warforged]";
 			}
 
-			if(slot.socket)
+			if(gear[i].item.socket)
 			{
 				if(wowhead_bonus.length > 0)
 				{
@@ -1158,41 +1127,15 @@ function update_slots()
 				bonus_text += " [socket]";
 			}
 
-			if(slot.tertiary == "avoidance")
+			if(gear[i].item.tertiary != -1)
 			{
 				if(wowhead_bonus.length > 0)
 				{
 					wowhead_bonus += ":";
 				}
-				wowhead_bonus += "40";
-				//bonus_text += " [av]";
-			}
-			else if(slot.tertiary == "indestructible")
-			{
-				if(wowhead_bonus.length > 0)
-				{
-					wowhead_bonus += ":";
-				}
-				wowhead_bonus += "43";
-				//bonus_text += " [in]";
-			}
-			else if(slot.tertiary == "leech")
-			{
-				if(wowhead_bonus.length > 0)
-				{
-					wowhead_bonus += ":";
-				}
-				wowhead_bonus += "41";
-				//bonus_text += " [le]";
-			}
-			else if(slot.tertiary == "speed")
-			{
-				if(wowhead_bonus.length > 0)
-				{
-					wowhead_bonus += ":";
-				}
-				wowhead_bonus += "42";
-				//bonus_text += " [sp]";
+				wowhead_bonus += tertiaries[gear[i].item.tertiary].code;
+
+				bonus_text += " [" + tertiaries[gear[i].item.tertiary].name + "]";
 			}
 
 			if(wowhead_bonus.length > 0)
@@ -1200,18 +1143,13 @@ function update_slots()
 				wowhead_link += "?bonus=" + wowhead_bonus;
 			}
 
-			wowhead_link += "&ilvl=" + slots[i].ilevel;
+			wowhead_link += "&ilvl=" + gear[i].item.ilevel;
 			anchor.setAttribute("href", wowhead_link);
 			anchor.setAttribute("class", wowhead_link_colour);
 
 			anchor.textContent = item.name;
 
 			name_cell.appendChild(anchor);
-
-			if(slot.tertiary.length > 0)
-			{
-				bonus_text += " [" + slot.tertiary + "]";
-			}
 
 			bonus_cell.textContent = bonus_text;
 		}
@@ -1264,12 +1202,20 @@ function is_fully_warforged()
 
 function is_fully_upgraded()
 {
-	for(i=0; i<slots.length; i++)
+	for(i=0; i<gear.length; i++)
 	{
-		if(slots[i].ignore == false && (slots[i].warforged == false ||
-			(slots[i].can_socket == true && slots[i].socket == false) ||
-			slots[i].tertiary == "" || slots[i].tertiary != "speed"))
-			return false;
+		if(gear[i].complete == false)
+		{
+			if(gear[i].warforged == false || (gear[i].can_socket == true && gear[i].item.socket == false) ||
+				gear[i].item.tertiary != 3 /*speed*/)
+			{
+				return false;
+			}
+			else
+			{
+				gear[i].complete = true;
+			}
+		}
 	}
 
 	return true;
@@ -1299,10 +1245,12 @@ function step()
 	
 	if(tertiary)
 	{
-		item.tertiary = tertiaries[rand_int(0, tertiaries.length-1)];
+		item.tertiary = rand_int(0, tertiaries.length-1);
 	}
 	else
-		item.tertiary = "";
+	{
+		item.tertiary = -1;
+	}
 
 	if(item.warforged)
 	{
@@ -1332,8 +1280,8 @@ function step()
 	let slot1 = undefined, slot2 = undefined;
 	if((slot_name == "Finger"))
 	{
-		slot1 = slots.find(slot => slot.name == "Finger 1");
-		slot2 = slots.find(slot => slot.name == "Finger 2");
+		slot1 = gear.find(slot => slot.slot == "Finger 1");
+		slot2 = gear.find(slot => slot.slot == "Finger 2");
 	}
 	else
 	{
@@ -1346,7 +1294,7 @@ function step()
 			slot_name = "Main Hand"
 		}
 
-		slot1 = slots.find(slot => slot.name == slot_name);
+		slot1 = gear.find(slot => slot.slot == slot_name);
 	}
 
 	let upgraded = upgrade_slot(item, slot1, slot2);
@@ -1445,13 +1393,15 @@ function reset()
 	clearTimeout(timer_id);
 
 	init_counts();
-	init_slots();
+	init_gear();
 	update_slots();
 	update_stats();
 }
 
 window.onload = function onLoad()
 {
+	init_gear();
 	init_gear_box();
-	reset();
+	update_slots();
+	update_stats();
 }
