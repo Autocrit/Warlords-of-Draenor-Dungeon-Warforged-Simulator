@@ -76,3 +76,18 @@ body {
 .colour-druid {
     color: #ff7c0a;
 }
+
+.gear-icon-cell {
+	width: 22px;
+	height: 22px;
+	border: 1px solid #555555;
+	margin: 2px;
+}
+
+.gear-icon {
+	width: 18px;
+	height: 18px;
+	float: left;
+	--margin-right: 6px;
+	--size: 20;
+}

@@ -164,7 +164,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Head",
 		"quality": "Heirloom",
-		"wowhead_link": "https://www.wowhead.com/item=122248/stained-shadowcraft-cap"
+		"wowhead_link": "https://www.wowhead.com/item=122248/stained-shadowcraft-cap",
+		"wowhead_icon": "inv_helmet_41"
 	},
 	{
 		"id": 122667,
@@ -173,7 +174,8 @@ const items = [
 		"subclass": "Amulets",
 		"slot": "Neck",
 		"quality": "Heirloom",
-		"wowhead_link": "https://www.wowhead.com/item=122667/eternal-emberfury-talisman"
+		"wowhead_link": "https://www.wowhead.com/item=122667/eternal-emberfury-talisman",
+		"wowhead_icon": "inv_jewelry_necklace_05"
 	},
 	{
 		"id": 122358,
@@ -182,7 +184,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Shoulder",
 		"quality": "Heirloom",
-		"wowhead_link": "https://www.wowhead.com/item=122358/stained-shadowcraft-spaulders"
+		"wowhead_link": "https://www.wowhead.com/item=122358/stained-shadowcraft-spaulders",
+		"wowhead_icon": "inv_shoulder_07"
 	},
 	{
 		"id": 160984,
@@ -191,7 +194,8 @@ const items = [
 		"subclass": "Cloak",
 		"slot": "Back",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=160984/sauroscale-cloak-of-adaptation"
+		"wowhead_link": "https://www.wowhead.com/item=160984/sauroscale-cloak-of-adaptation",
+		"wowhead_icon": "inv_cape_mail_zandalarquest_b_01"
 	},
 	{
 		"id": 122383,
@@ -200,7 +204,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Chest",
 		"quality": "Heirloom",
-		"wowhead_link": "https://www.wowhead.com/item=122383/stained-shadowcraft-tunic"
+		"wowhead_link": "https://www.wowhead.com/item=122383/stained-shadowcraft-tunic",
+		"wowhead_icon": "inv_chest_leather_07"
 	},
 	{
 		"id": 154478,
@@ -209,7 +214,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Wrist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=154478/ranja-hide-bracers"
+		"wowhead_link": "https://www.wowhead.com/item=154478/ranja-hide-bracers",
+		"wowhead_icon": "inv_bracer_leather_kultirasquest_b_01"
 	},
 	{
 		"id": 160460,
@@ -218,7 +224,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Hands",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=160460/thick-sauroskin-gloves"
+		"wowhead_link": "https://www.wowhead.com/item=160460/thick-sauroskin-gloves",
+		"wowhead_icon": "inv_glove_leather_kultirasquest_b_01"
 	},
 	{
 		"id": 154474,
@@ -227,7 +234,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Waist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=154474/sythian-swiftbelt"
+		"wowhead_link": "https://www.wowhead.com/item=154474/sythian-swiftbelt",
+		"wowhead_icon": "inv_belt_leather_kultirasquest_b_01"
 	},
 	{
 		"id": 160461,
@@ -236,7 +244,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Legs",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=160461/thick-sauroskin-pants"
+		"wowhead_link": "https://www.wowhead.com/item=160461/thick-sauroskin-pants",
+		"wowhead_icon": "inv_pants_leather_kultirasquest_b_01"
 	},
 	{
 		"id": 161091,
@@ -245,7 +254,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Feet",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=161091/swift-talon-striders"
+		"wowhead_link": "https://www.wowhead.com/item=161091/swift-talon-striders",
+		"wowhead_icon": "inv_boot_leather_zandalarquest_b_01"
 	},
 	{
 		"id": 155381,
@@ -254,7 +264,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=155381/cutwater-captains-sapphire-ring"
+		"wowhead_link": "https://www.wowhead.com/item=155381/cutwater-captains-sapphire-ring",
+		"wowhead_icon": "inv_misc_60raid_ring_1b"
 	},
 	{
 		"id": 161446,
@@ -263,7 +274,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=161446/blistering-seawater-seal"
+		"wowhead_link": "https://www.wowhead.com/item=161446/blistering-seawater-seal",
+		"wowhead_icon": "inv_ring_80_02b"
 	},
 	{
 		"id": 158556,
@@ -272,7 +284,8 @@ const items = [
 		"subclass": "Trinkets",
 		"slot": "Trinket",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=158556/sirens-tongue"
+		"wowhead_link": "https://www.wowhead.com/item=158556/sirens-tongue",
+		"wowhead_icon": "inv_misc_food_ghoststeak_bone"
 	},
 	{
 		"id": 178769,
@@ -281,7 +294,8 @@ const items = [
 		"subclass": "Trinkets",
 		"slot": "Trinket",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=178769/infinitely-divisible-ooze"
+		"wowhead_link": "https://www.wowhead.com/item=178769/infinitely-divisible-ooze",
+		"wowhead_icon": "inv_alchemy_elixir_03"
 	},
 	{
 		"id": 140773,
@@ -290,7 +304,8 @@ const items = [
 		"subclass": "Polearms",
 		"slot": "Two-Hand",
 		"quality": "Heirloom",
-		"wowhead_link": "https://www.wowhead.com/item=140773/eagletalon-spear"
+		"wowhead_link": "https://www.wowhead.com/item=140773/eagletalon-spear",
+		"wowhead_icon": "inv_polearm_2h_heirloomspear_c_01"
 	},
 	{
 		"id": 109898,
@@ -299,7 +314,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Chest",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109898/blackwater-wrap"
+		"wowhead_link": "https://www.wowhead.com/item=109898/blackwater-wrap",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01chest"
 	},
 	{
 		"id": 109885,
@@ -308,7 +324,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Chest",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109885/bloodfeather-chestwrap"
+		"wowhead_link": "https://www.wowhead.com/item=109885/bloodfeather-chestwrap",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01chest"
 	},
 	{
 		"id": 109884,
@@ -317,7 +334,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Chest",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109884/chestguard-of-burning-focus"
+		"wowhead_link": "https://www.wowhead.com/item=109884/chestguard-of-burning-focus",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01chest"
 	},
 	{
 		"id": 109886,
@@ -326,7 +344,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Chest",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109886/crystalbinder-chestguard"
+		"wowhead_link": "https://www.wowhead.com/item=109886/crystalbinder-chestguard",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01chest"
 	},
 	{
 		"id": 109897,
@@ -335,7 +354,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Chest",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109897/leafmender-robes"
+		"wowhead_link": "https://www.wowhead.com/item=109897/leafmender-robes",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01chest"
 	},
 	{
 		"id": 109862,
@@ -344,7 +364,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Gloves",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109862/blackwater-grips"
+		"wowhead_link": "https://www.wowhead.com/item=109862/blackwater-grips",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01glove"
 	},
 	{
 		"id": 109849,
@@ -353,7 +374,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Gloves",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109849/bloodfeather-grips"
+		"wowhead_link": "https://www.wowhead.com/item=109849/bloodfeather-grips",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01glove"
 	},
 	{
 		"id": 109850,
@@ -362,7 +384,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Gloves",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109850/crystalbinder-gloves"
+		"wowhead_link": "https://www.wowhead.com/item=109850/crystalbinder-gloves",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01glove"
 	},
 	{
 		"id": 109848,
@@ -371,7 +394,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Gloves",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109848/gauntlets-of-burning-focus"
+		"wowhead_link": "https://www.wowhead.com/item=109848/gauntlets-of-burning-focus",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01glove"
 	},
 	{
 		"id": 109851,
@@ -380,7 +404,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Gloves",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109851/leafmender-grips"
+		"wowhead_link": "https://www.wowhead.com/item=109851/leafmender-grips",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01glove"
 	},
 	{
 		"id": 110040,
@@ -389,7 +414,8 @@ const items = [
 		"subclass": "Polearms",
 		"slot": "Two-Hand",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=110040/crushtos-neck-separator"
+		"wowhead_link": "https://www.wowhead.com/item=110040/crushtos-neck-separator",
+		"wowhead_icon": "inv_polearm_2h_draenordungeon_c_01"
 	},
 	{
 		"id": 109882,
@@ -398,7 +424,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Wrist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109882/blackwater-wristguards"
+		"wowhead_link": "https://www.wowhead.com/item=109882/blackwater-wristguards",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01bracer"
 	},
 	{
 		"id": 109869,
@@ -407,7 +434,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Wrist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109869/bloodfeather-bracers"
+		"wowhead_link": "https://www.wowhead.com/item=109869/bloodfeather-bracers",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01bracer"
 	},
 	{
 		"id": 109868,
@@ -416,7 +444,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Wrist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109868/bracers-of-burning-focus"
+		"wowhead_link": "https://www.wowhead.com/item=109868/bracers-of-burning-focus",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01bracer"
 	},
 	{
 		"id": 109870,
@@ -425,7 +454,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Wrist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109870/crystalbinder-wristguards"
+		"wowhead_link": "https://www.wowhead.com/item=109870/crystalbinder-wristguards",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01bracer"
 	},
 	{
 		"id": 109871,
@@ -434,7 +464,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Wrist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109871/leafmender-wraps"
+		"wowhead_link": "https://www.wowhead.com/item=109871/leafmender-wraps",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01bracer"
 	},
 	{
 		"id": 109823,
@@ -443,7 +474,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Legs",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109823/blackwater-leggings"
+		"wowhead_link": "https://www.wowhead.com/item=109823/blackwater-leggings",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01pant"
 	},
 	{
 		"id": 109810,
@@ -452,7 +484,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Legs",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109810/bloodfeather-leggings"
+		"wowhead_link": "https://www.wowhead.com/item=109810/bloodfeather-leggings",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01pant"
 	},
 	{
 		"id": 109811,
@@ -461,7 +494,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Legs",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109811/crystalbinder-legwraps"
+		"wowhead_link": "https://www.wowhead.com/item=109811/crystalbinder-legwraps",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01pant"
 	},
 	{
 		"id": 109812,
@@ -470,7 +504,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Legs",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109812/leafmender-legwraps"
+		"wowhead_link": "https://www.wowhead.com/item=109812/leafmender-legwraps",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01pant"
 	},
 	{
 		"id": 109809,
@@ -479,7 +514,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Legs",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109809/legguards-of-burning-focus"
+		"wowhead_link": "https://www.wowhead.com/item=109809/legguards-of-burning-focus",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01pant"
 	},
 	{
 		"id": 109904,
@@ -488,7 +524,8 @@ const items = [
 		"subclass": "Cloak",
 		"slot": "Back",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109904/cloak-of-cascading-blades"
+		"wowhead_link": "https://www.wowhead.com/item=109904/cloak-of-cascading-blades",
+		"wowhead_icon": "inv_cape_draenordungeon_c_04leather_dark"
 	},
 	{
 		"id": 109929,
@@ -497,7 +534,8 @@ const items = [
 		"subclass": "Cloak",
 		"slot": "Back",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109929/cloak-of-steeled-nerves"
+		"wowhead_link": "https://www.wowhead.com/item=109929/cloak-of-steeled-nerves",
+		"wowhead_icon": "inv_cape_draenordungeon_c_04leather_dark"
 	},
 	{
 		"id": 109906,
@@ -506,7 +544,8 @@ const items = [
 		"subclass": "Cloak",
 		"slot": "Back",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109906/cloak-of-violent-harmony"
+		"wowhead_link": "https://www.wowhead.com/item=109906/cloak-of-violent-harmony",
+		"wowhead_icon": "inv_cape_draenordungeon_c_03_mail"
 	},
 	{
 		"id": 109905,
@@ -515,7 +554,8 @@ const items = [
 		"subclass": "Cloak",
 		"slot": "Back",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109905/deadshot-greatcloak"
+		"wowhead_link": "https://www.wowhead.com/item=109905/deadshot-greatcloak",
+		"wowhead_icon": "inv_cape_draenordungeon_c_02_plate"
 	},
 	{
 		"id": 109916,
@@ -524,7 +564,8 @@ const items = [
 		"subclass": "Cloak",
 		"slot": "Back",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109916/drape-of-swirling-deflection"
+		"wowhead_link": "https://www.wowhead.com/item=109916/drape-of-swirling-deflection",
+		"wowhead_icon": "inv_cape_draenordungeon_c_02_plate"
 	},
 	{
 		"id": 109915,
@@ -533,7 +574,8 @@ const items = [
 		"subclass": "Cloak",
 		"slot": "Back",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109915/rigid-scale-cloak"
+		"wowhead_link": "https://www.wowhead.com/item=109915/rigid-scale-cloak",
+		"wowhead_icon": "inv_cape_draenordungeon_c_02_plate"
 	},
 	{
 		"id": 109918,
@@ -542,7 +584,8 @@ const items = [
 		"subclass": "Cloak",
 		"slot": "Back",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109918/soot-scarred-longcloak"
+		"wowhead_link": "https://www.wowhead.com/item=109918/soot-scarred-longcloak",
+		"wowhead_icon": "inv_cape_draenordungeon_c_04leather_light"
 	},
 	{
 		"id": 109917,
@@ -551,7 +594,8 @@ const items = [
 		"subclass": "Cloak",
 		"slot": "Back",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109917/three-clefthoof-cape"
+		"wowhead_link": "https://www.wowhead.com/item=109917/three-clefthoof-cape",
+		"wowhead_icon": "inv_cape_draenordungeon_c_03_mail_brown"
 	},
 	{
 		"id": 109799,
@@ -560,7 +604,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Feet",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109799/blackwater-boots"
+		"wowhead_link": "https://www.wowhead.com/item=109799/blackwater-boots",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01boot"
 	},
 	{
 		"id": 109788,
@@ -569,7 +614,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Feet",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109788/bloodfeather-treads"
+		"wowhead_link": "https://www.wowhead.com/item=109788/bloodfeather-treads",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01boot"
 	},
 	{
 		"id": 109787,
@@ -578,7 +624,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Feet",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109787/boots-of-burning-focus"
+		"wowhead_link": "https://www.wowhead.com/item=109787/boots-of-burning-focus",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01boot"
 	},
 	{
 		"id": 109789,
@@ -587,7 +634,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Feet",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109789/crystalbinder-sandals"
+		"wowhead_link": "https://www.wowhead.com/item=109789/crystalbinder-sandals",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01boot"
 	},
 	{
 		"id": 109798,
@@ -596,7 +644,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Feet",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109798/leafmender-sandals"
+		"wowhead_link": "https://www.wowhead.com/item=109798/leafmender-sandals",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01boot"
 	},
 	{
 		"id": 110015,
@@ -605,7 +654,8 @@ const items = [
 		"subclass": "Trinkets",
 		"slot": "Trinket",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=110015/torias-unseeing-eye"
+		"wowhead_link": "https://www.wowhead.com/item=110015/torias-unseeing-eye",
+		"wowhead_icon": "sha_ability_rogue_bloodyeye"
 	},
 	{
 		"id": 109979,
@@ -614,7 +664,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Head",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109979/blackwater-helm"
+		"wowhead_link": "https://www.wowhead.com/item=109979/blackwater-helm",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01helm"
 	},
 	{
 		"id": 109976,
@@ -623,7 +674,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Head",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109976/bloodfeather-cowl"
+		"wowhead_link": "https://www.wowhead.com/item=109976/bloodfeather-cowl",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01helm"
 	},
 	{
 		"id": 109977,
@@ -632,7 +684,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Head",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109977/crystalbinder-helm"
+		"wowhead_link": "https://www.wowhead.com/item=109977/crystalbinder-helm",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01helm"
 	},
 	{
 		"id": 109975,
@@ -641,7 +694,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Head",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109975/hood-of-burning-focus"
+		"wowhead_link": "https://www.wowhead.com/item=109975/hood-of-burning-focus",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01helm"
 	},
 	{
 		"id": 109978,
@@ -650,7 +704,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Head",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109978/leafmender-hood"
+		"wowhead_link": "https://www.wowhead.com/item=109978/leafmender-hood",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01helm"
 	},
 	{
 		"id": 109938,
@@ -659,7 +714,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Shoulder",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109938/blackwater-spaulders"
+		"wowhead_link": "https://www.wowhead.com/item=109938/blackwater-spaulders",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01shoulder"
 	},
 	{
 		"id": 109935,
@@ -668,7 +724,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Shoulder",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109935/bloodfeather-spaulders"
+		"wowhead_link": "https://www.wowhead.com/item=109935/bloodfeather-spaulders",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01shoulder"
 	},
 	{
 		"id": 109936,
@@ -677,7 +734,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Shoulder",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109936/crystalbinder-shoulderpads"
+		"wowhead_link": "https://www.wowhead.com/item=109936/crystalbinder-shoulderpads",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01shoulder"
 	},
 	{
 		"id": 109937,
@@ -686,7 +744,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Shoulder",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109937/leafmender-mantle"
+		"wowhead_link": "https://www.wowhead.com/item=109937/leafmender-mantle",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01shoulder"
 	},
 	{
 		"id": 109934,
@@ -695,7 +754,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Shoulder",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109934/spaulders-of-burning-focus"
+		"wowhead_link": "https://www.wowhead.com/item=109934/spaulders-of-burning-focus",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01shoulder"
 	},
 	{
 		"id": 109779,
@@ -704,7 +764,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109779/ancient-draenic-loop"
+		"wowhead_link": "https://www.wowhead.com/item=109779/ancient-draenic-loop",
+		"wowhead_icon": "inv_60dungeon_ring1a"
 	},
 	{
 		"id": 109783,
@@ -713,7 +774,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109783/band-of-the-stalwart-stanchion"
+		"wowhead_link": "https://www.wowhead.com/item=109783/band-of-the-stalwart-stanchion",
+		"wowhead_icon": "inv_60dungeon_ring8b"
 	},
 	{
 		"id": 109775,
@@ -722,7 +784,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109775/bladebinder-ring"
+		"wowhead_link": "https://www.wowhead.com/item=109775/bladebinder-ring",
+		"wowhead_icon": "inv_60dungeon_ring3d"
 	},
 	{
 		"id": 109761,
@@ -731,7 +794,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109761/bloodthorn-band"
+		"wowhead_link": "https://www.wowhead.com/item=109761/bloodthorn-band",
+		"wowhead_icon": "inv_60dungeon_ring4a"
 	},
 	{
 		"id": 109760,
@@ -740,7 +804,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109760/ceds-chiming-circle"
+		"wowhead_link": "https://www.wowhead.com/item=109760/ceds-chiming-circle",
+		"wowhead_icon": "inv_60dungeon_ring5b"
 	},
 	{
 		"id": 109759,
@@ -749,7 +814,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109759/ro-gers-brown-diamond-seal"
+		"wowhead_link": "https://www.wowhead.com/item=109759/ro-gers-brown-diamond-seal",
+		"wowhead_icon": "inv_60dungeon_ring2c"
 	},
 	{
 		"id": 109776,
@@ -758,7 +824,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109776/seal-of-resilient-fortitude"
+		"wowhead_link": "https://www.wowhead.com/item=109776/seal-of-resilient-fortitude",
+		"wowhead_icon": "inv_60dungeon_ring4b"
 	},
 	{
 		"id": 109762,
@@ -767,7 +834,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109762/signet-of-radiant-leaves"
+		"wowhead_link": "https://www.wowhead.com/item=109762/signet-of-radiant-leaves",
+		"wowhead_icon": "inv_60dungeon_ring5c"
 	},
 	{
 		"id": 109778,
@@ -776,7 +844,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109778/signet-of-the-glorious-protector"
+		"wowhead_link": "https://www.wowhead.com/item=109778/signet-of-the-glorious-protector",
+		"wowhead_icon": "inv_60dungeon_ring7a"
 	},
 	{
 		"id": 109777,
@@ -785,7 +854,8 @@ const items = [
 		"subclass": "Rings",
 		"slot": "Finger",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109777/unsullied-signet"
+		"wowhead_link": "https://www.wowhead.com/item=109777/unsullied-signet",
+		"wowhead_icon": "inv_60dungeon_ring6a"
 	},
 	{
 		"id": 109969,
@@ -794,7 +864,8 @@ const items = [
 		"subclass": "Amulets",
 		"slot": "Neck",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109969/choker-of-weeping-viscera"
+		"wowhead_link": "https://www.wowhead.com/item=109969/choker-of-weeping-viscera",
+		"wowhead_icon": "inv_60dungeon_neck1b"
 	},
 	{
 		"id": 109951,
@@ -803,7 +874,8 @@ const items = [
 		"subclass": "Amulets",
 		"slot": "Neck",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109951/fireblade-collar"
+		"wowhead_link": "https://www.wowhead.com/item=109951/fireblade-collar",
+		"wowhead_icon": "inv_60dungeon_neck4a"
 	},
 	{
 		"id": 109965,
@@ -812,7 +884,8 @@ const items = [
 		"subclass": "Amulets",
 		"slot": "Neck",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109965/fistbreak-choker"
+		"wowhead_link": "https://www.wowhead.com/item=109965/fistbreak-choker",
+		"wowhead_icon": "inv_60dungeon_neck1d"
 	},
 	{
 		"id": 109967,
@@ -821,7 +894,8 @@ const items = [
 		"subclass": "Amulets",
 		"slot": "Neck",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109967/necklace-of-holy-deflection"
+		"wowhead_link": "https://www.wowhead.com/item=109967/necklace-of-holy-deflection",
+		"wowhead_icon": "inv_60dungeon_neck3b"
 	},
 	{
 		"id": 109966,
@@ -830,7 +904,8 @@ const items = [
 		"subclass": "Amulets",
 		"slot": "Neck",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109966/reinforced-bloodsteel-gorget"
+		"wowhead_link": "https://www.wowhead.com/item=109966/reinforced-bloodsteel-gorget",
+		"wowhead_icon": "inv_60dungeon_neck4a"
 	},
 	{
 		"id": 109952,
@@ -839,7 +914,8 @@ const items = [
 		"subclass": "Amulets",
 		"slot": "Neck",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109952/skulltooth-chain"
+		"wowhead_link": "https://www.wowhead.com/item=109952/skulltooth-chain",
+		"wowhead_icon": "inv_60dungeon_neck2b"
 	},
 	{
 		"id": 109950,
@@ -848,7 +924,8 @@ const items = [
 		"subclass": "Amulets",
 		"slot": "Neck",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109950/stormshot-choker"
+		"wowhead_link": "https://www.wowhead.com/item=109950/stormshot-choker",
+		"wowhead_icon": "inv_60dungeon_neck3b"
 	},
 	{
 		"id": 109953,
@@ -857,7 +934,8 @@ const items = [
 		"subclass": "Amulets",
 		"slot": "Neck",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109953/windseal-necklace"
+		"wowhead_link": "https://www.wowhead.com/item=109953/windseal-necklace",
+		"wowhead_icon": "inv_60dungeon_neck1c"
 	},
 	{
 		"id": 109829,
@@ -866,7 +944,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Waist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109829/belt-of-burning-focus"
+		"wowhead_link": "https://www.wowhead.com/item=109829/belt-of-burning-focus",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01belt"
 	},
 	{
 		"id": 109842,
@@ -875,7 +954,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Waist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109842/blackwater-belt"
+		"wowhead_link": "https://www.wowhead.com/item=109842/blackwater-belt",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01belt"
 	},
 	{
 		"id": 109830,
@@ -884,7 +964,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Waist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109830/bloodfeather-girdle"
+		"wowhead_link": "https://www.wowhead.com/item=109830/bloodfeather-girdle",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01belt"
 	},
 	{
 		"id": 109831,
@@ -893,7 +974,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Waist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109831/crystalbinder-belt"
+		"wowhead_link": "https://www.wowhead.com/item=109831/crystalbinder-belt",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01belt"
 	},
 	{
 		"id": 109832,
@@ -902,7 +984,8 @@ const items = [
 		"subclass": "Leather Armor",
 		"slot": "Waist",
 		"quality": "Rare",
-		"wowhead_link": "https://www.wowhead.com/item=109832/leafmender-girdle"
+		"wowhead_link": "https://www.wowhead.com/item=109832/leafmender-girdle",
+		"wowhead_icon": "inv_leather_draenordungeon_c_01belt"
 	}
 ];
 
@@ -1064,6 +1147,11 @@ function init_gear_box()
 		row.setAttribute("class", "row row-border");
 		gear_box.appendChild(row);
 
+		let icon_cell = document.createElement("div");
+		icon_cell.setAttribute("id", gear[i].slot + "-icon-cell");
+		icon_cell.setAttribute("class", "gear-icon-cell");
+		row.appendChild(icon_cell);
+
 		let name_cell = document.createElement("div");
 		name_cell.setAttribute("id", gear[i].slot + "-name-cell");
 		name_cell.setAttribute("class", "column");
@@ -1081,9 +1169,14 @@ function update_slots()
 	for(let i=0; i<gear.length; i++)
 	{
 		//let gear_slot = slots[i];
+		let icon_cell = document.getElementById(gear[i].slot + "-icon-cell");
 		let name_cell = document.getElementById(gear[i].slot + "-name-cell");
 		let bonus_cell = document.getElementById(gear[i].slot + "-bonus-cell");
 		let bonus_text = "";
+
+		// Remove existing icon
+		while(icon_cell.hasChildNodes())
+			icon_cell.removeChild(icon_cell.lastChild);
 
 		// Remove existing link
 		while(name_cell.hasChildNodes())
@@ -1093,8 +1186,6 @@ function update_slots()
 		{
 			let item = get_item_by_item_id(gear[i].item.id);
 			let wowhead_link = item.wowhead_link, wowhead_bonus = "", wowhead_link_colour = "colour-rare";
-
-			let anchor = document.createElement("a");
 
 			if(gear[i].item.quality == "Heirloom")
 			{
@@ -1140,11 +1231,21 @@ function update_slots()
 			}
 
 			wowhead_link += "&ilvl=" + gear[i].item.ilevel;
+
+			// Icon cell
+			let anchor = document.createElement("a");
+			anchor.setAttribute("href", wowhead_link);
+			var img_element = document.createElement("img");
+			img_element.setAttribute("src", "https://wow.zamimg.com/images/wow/icons/small/" + item.wowhead_icon + ".jpg");
+			img_element.setAttribute("class", "gear-icon");
+			anchor.appendChild(img_element);
+			icon_cell.appendChild(anchor);
+
+			// Text link
+			anchor = document.createElement("a");
 			anchor.setAttribute("href", wowhead_link);
 			anchor.setAttribute("class", wowhead_link_colour);
-
 			anchor.textContent = item.name;
-
 			name_cell.appendChild(anchor);
 
 			bonus_cell.textContent = bonus_text;
