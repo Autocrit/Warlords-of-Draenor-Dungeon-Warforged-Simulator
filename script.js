@@ -998,13 +998,9 @@ function get_item_score(item)
 	{
 		item_score += 1;
 	}
-	else if(item.tertiary == 3)
+	else if(item.tertiary == 2 || item.tertiary == 3)
 	{
 		item_score += 2;
-	}
-	else if(item.tertiary == 4)
-	{
-		item_score += 4;
 	}
 
 	if(item.socket)
@@ -1207,7 +1203,7 @@ function is_fully_upgraded()
 		if(gear[i].complete == false)
 		{
 			if(gear[i].warforged == false || (gear[i].can_socket == true && gear[i].item.socket == false) ||
-				gear[i].item.tertiary != 3 /*speed*/)
+				(gear[i].item.tertiary != 2 && gear[i].item.tertiary != 3))
 			{
 				return false;
 			}
