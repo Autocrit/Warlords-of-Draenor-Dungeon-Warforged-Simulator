@@ -6,7 +6,7 @@
 		<title>Warforged of WoD Craft</title>
 		<link rel="stylesheet" href="style.css" />
 		<script src="https://wow.zamimg.com/js/tooltips.js"></script>
-		<script src="script.js"></script>
+		<script src="script.js" type="module"></script>
 
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-E9MGS60VV0"></script>
@@ -29,25 +29,25 @@
 			</div>
 			<div class="row">
 				<div class="column">
-					<button type="button" class="button" onclick="run()">RUN</button>
+					<button id="run-btn" type="button" class="button">RUN</button>
 				</div>
 				<div class="column">
-					<button type="button" class="button" onclick="pause()">PAUSE</button>
+					<button id="pause-btn" type="button" class="button">PAUSE</button>
 				</div>
 				<div class="column">
-					<button type="button" class="button" onclick="resume()">RESUME</button>
+					<button id="resume-btn" type="button" class="button">RESUME</button>
 				</div>
 				<div class="column">
-					<button type="button" class="button" onclick="reset()">RESET</button>
+					<button id="reset-btn" type="button" class="button">RESET</button>
 				</div>
 				<div class="column">
-					<button type="button" class="button" onclick="slower()">SLOWER</button>
+					<button id="slower-btn" type="button" class="button">SLOWER</button>
 				</div>
 				<div class="column">
-					<button type="button" class="button" onclick="faster()">FASTER</button>
+					<button id="faster-btn" type="button" class="button">FASTER</button>
 				</div>
 				<div class="column">
-					<button type="button" class="button" onclick="fastest()">FASTEST</button>
+					<button id="fastest-btn" type="button" class="button">FASTEST</button>
 				</div>
 			</div>
 			<div class="box">
